@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.container{padding-top: 150px}
+.heading_area h1{font-size: 45px}
+.logo_area img{max-width: 75%;}
+.logo_area { margin-bottom: 150px; }
+.user_area{margin-bottom: 120px;}
+.user_area h3 a{font-size: 25px}
+.user_area h1{font-size: 35px}
+.resources_area h1{font-size: 45px}
+.footer_menu li a{font-size: 30px}
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+.container{padding-top: 100px}
+.heading_area h1{font-size: 32px}
+.logo_area img{max-width: 75%;}
+.logo_area { margin-bottom: 100px; }
+.user_area{margin-bottom: 100px;}
+.user_area img{max-width: 75%;}
+.user_area h3 a{font-size: 20px}
+.user_area h1{font-size: 30px}
+.resources_area h1{font-size: 30px}
+.footer_menu li a{font-size: 25px}
+
+
+
+}
