@@ -20,25 +20,25 @@ margin-top: 20px;
 }
 
 .heading_area{
-	margin-bottom: 155px;
+	margin-bottom: 100px;
 }
 
 .logo_area{
 	margin-bottom: 80px;
 }
 .logo_area img{
-	max-width: 35%;
-	width: 36%;
+	max-width: 40%;
+	width: 40%;
 }
 .user_area{
 	margin-bottom: 50px;
 }
 .user_area img{
-	max-width:250px;
+	max-width:150px;
 }
 .user_area h1 {
 	font-family: 'Neou-Thin';
-	font-size: 30px;
+	font-size: 20px;
 	color:#fff;
 	margin-bottom: 0;
 }
