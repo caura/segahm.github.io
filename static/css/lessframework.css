@@ -1,45 +1,48 @@
-
-
-
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-
+/* Extra small devices (phones up to 480px) */
+@media screen and (max-width: 480px) {
+  h1{
+    font-size: 1.5em;
+  }
+  h2{
+   font-size: 1.0em;
+  }
+  h3{
+   font-size: 1.0em;
+  }
+}
+/* IPhone6 */
+@media (min-width: 481px) and (max-width: 754px) {
+  h1{
+    font-size: 2em;
+  }
+  h2{
+   font-size: 1.5em;
+  }
+  h3{
+   font-size: 1.0em;
+  }
 }
 
-
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-.container{padding-top: 150px}
-.heading_area h1{font-size: 45px}
-.logo_area img{max-width: 75%;}
-.logo_area { margin-bottom: 150px; }
-.user_area{margin-bottom: 120px;}
-.user_area h3 a{font-size: 25px}
-.user_area h1{font-size: 35px}
-.resources_area h1{font-size: 45px}
-.footer_menu li a{font-size: 30px}
+@media (min-width: 755px) and (max-width: 1200px) {
+  h1{
+    font-size: 2.5em;
+  }
+  h2{
+   font-size: 2em;
+  }
+  h3{
+   font-size: 1.0em;
+  }
 }
-
-
-
-
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-.container{padding-top: 100px}
-.heading_area h1{font-size: 32px}
-.logo_area img{max-width: 75%;}
-.logo_area { margin-bottom: 100px; }
-.user_area{margin-bottom: 100px;}
-.user_area img{max-width: 75%;}
-.user_area h3 a{font-size: 20px}
-.user_area h1{font-size: 30px}
-.resources_area h1{font-size: 30px}
-.footer_menu li a{font-size: 25px}
-
-
-
+/* large desktops and up ----------- */
+@media (min-width: 1201px) {
+  h1{
+    font-size: 3em;
+  }
+  h2{
+   font-size: 3em;
+  }
+  h3{
+   font-size: 1.5em;
+  }
 }
