@@ -1,0 +1,429 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+	color:#fff;
+	font-weight:400;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	background-color:#000000;
+	min-height:100%;
+	 
+}
+body img{
+	max-width:100%;
+}
+.main-container{
+	max-width:950px;
+	padding-top:100px;
+	text-align:center;
+	background-image:url(../img/wave-desktop.png);
+	background-position:right top;
+	background-repeat:no-repeat;
+	 
+	min-height:100%;
+	position:relative;
+	display:block;
+	height:100%;
+	 
+}
+
+a:hover{
+	color:#fff !important;
+	text-decoration:none !important;
+}
+a, a:hover, a:active, a:visited {
+    text-decoration:none !important;
+}
+.main-container h2{
+	border-top:solid 2px #f7ab21;
+	border-bottom:solid 2px #f7ab21;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#fff;
+	text-transform:uppercase;
+	max-width:255px;
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:300;
+	font-size:31px;
+	text-indent:-12px;
+	white-space:nowrap;
+	 
+}
+.logo-container{
+	margin-top:60px;
+}
+.logo-container img{
+	max-width:100%;
+	width:340px;
+}
+.logo-container h3{
+	 
+	color:#fff;
+	text-transform:uppercase;
+	max-width:260px;
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:300;
+	font-size:17px;
+	margin-top:-25px;
+	text-indent:25px;
+}
+.circle-image-container{
+	margin-top:90px;
+}
+.circle-image-container img{
+	max-width:135px;
+}
+.circle-image-container h4{
+	text-transform:uppercase;
+	color:#fff;
+	font-size:20px;
+	font-weight:300;
+}
+.circle-image-container h4 span{
+	color:#fff;
+	font-size:16px;
+}
+.circle-image-container h4 span a{
+	color:#ffcc33;
+}
+.main-container h5{
+	border-top:solid 2px #f7ab21;
+	border-bottom:solid 2px #f7ab21;
+	padding-top:2px;
+	padding-bottom:2px;
+	color:#fff;
+	text-transform:uppercase;
+	width:120px;
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:300;
+	font-size:32px;
+	max-width:100%;
+	margin-top:90px;
+}
+ 
+.main-container ul{
+	 list-style:none;
+	 margin:0px;
+	 padding:0px;
+ }
+.main-container ul li a{
+	 color:#cd8e1c;
+	 text-transform:uppercase;
+	 font-size:22px;
+ }
+ .main-container ul li a:hover{
+	 text-decoration:none !important;
+ }
+@media (max-width: 991px) {
+	body{
+		background-image:url(../img/991.png);
+	background-position:right top;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	}
+	 .main-container{
+		 background-image:none;
+	 }
+ 
+}
+
+@media (max-width: 768px) {
+	body{
+		background-image:url(../img/768.png);
+	 
+	}
+	.main-container {
+    
+    
+    max-width: 100%;
+    min-height: 100%;
+    padding-top: 70px;
+    
+}
+
+.main-container h2 {
+   
+    font-size: 26px;
+	max-width:210px;
+    
+   
+    padding-bottom: 5px;
+    padding-top: 5px;
+     
+}
+.logo-container {
+    margin-top: 50px;
+}
+.logo-container img {
+    
+    width: 325px;
+}
+.logo-container h3 {
+    
+    font-size: 16px;
+    
+}
+
+.circle-image-container {
+    margin-top: 75px;
+}
+.circle-image-container img {
+    max-width: 125px;
+}
+.circle-image-container h4 {
+   
+    font-size: 20px;
+    
+}
+.circle-image-container h4 span {
+    
+    font-size: 16px;
+}
+.main-container h5 {
+    
+    font-size: 27px;
+     
+    margin-top: 75px;
+   
+    padding-bottom: 1px;
+    padding-top: 1px;
+   
+    width: 100px;
+}
+.main-container ul li a {
+    
+    font-size: 20px;
+    
+}
+
+}
+
+
+@media (max-width: 650px) {
+	body{
+		background-image:url(../img/650.png);
+	 
+	}
+	.main-container {
+    
+    
+     
+    padding-top: 50px;
+    
+}
+
+.main-container h2 {
+   
+    font-size: 22px;
+	max-width:180px;
+	text-indent:-8px;
+    
+   
+    padding-bottom: 3px;
+    padding-top: 3px;
+     
+}
+.logo-container {
+    margin-top: 50px;
+}
+.logo-container img {
+    
+    width: 300px;
+}
+.logo-container h3 {
+    
+    font-size: 14px;
+    
+}
+
+.circle-image-container {
+    margin-top: 70px;
+}
+.circle-image-container img {
+    max-width: 105px;
+}
+.circle-image-container h4 {
+   
+    font-size: 18px;
+    
+}
+.circle-image-container h4 span {
+    
+    font-size: 15px;
+}
+.main-container h5 {
+    
+    font-size: 23px;
+     
+    margin-top: 70px;
+   
+    padding-bottom: 1px;
+    padding-top: 1px;
+   
+    width: 90px;
+}
+.main-container ul li a {
+    
+    font-size: 17px;
+    
+}
+
+}
+
+@media (max-width: 550px) {
+	body{
+		background-image:url(../img/550.png);
+	 
+	}
+	.main-container {
+    
+    
+     
+    padding-top: 20px;
+    
+}
+
+.main-container h2 {
+   
+    font-size: 18px;
+	max-width:150px;
+	text-indent:-5px;
+    
+   
+    padding-bottom: 2px;
+    padding-top: 2px;
+     
+}
+.logo-container {
+    margin-top: 25px;
+}
+.logo-container img {
+    
+    width: 250px;
+}
+.logo-container h3 {
+    
+    font-size: 12px;
+	margin-top:-20px;
+	text-indent:2px;
+    
+}
+
+.circle-image-container {
+    margin-top: 50px;
+}
+.circle-image-container img {
+    max-width: 90px;
+}
+.circle-image-container h4 {
+   
+    font-size: 16px;
+    
+}
+.circle-image-container h4 span {
+    
+    font-size: 13px;
+}
+.main-container h5 {
+    
+    font-size: 20px;
+     
+    margin-top: 50px;
+   
+    padding-bottom: 1px;
+    padding-top: 1px;
+   
+    width: 80px;
+}
+.main-container ul li a {
+    
+    font-size: 15px;
+    
+}
+
+}
+
+@media (max-width: 450px) {
+	body{
+		background-image:url(../img/450.png);
+		background-repeat:repeat-y;
+	 
+	}
+ 
+
+}
+
+
+@media (max-width: 400px) {
+ 
+	.main-container {
+    
+    
+     
+    padding-top: 15px;
+    
+}
+
+.main-container h2 {
+   
+    font-size: 18px;
+	max-width:148px;
+    
+   
+    padding-bottom: 2px;
+    padding-top: 2px;
+     
+}
+.logo-container {
+    margin-top: 50px;
+}
+.logo-container img {
+    
+    width: 225px;
+}
+.logo-container h3 {
+    
+    font-size: 10px;
+	margin-top:-18px;
+	text-indent:2px;
+	font-size:12px;
+    
+}
+
+.circle-image-container {
+    margin-top: 70px;
+}
+.circle-image-container img {
+    max-width: 70px;
+}
+.circle-image-container h4 {
+   
+    font-size: 15px;
+    
+}
+.circle-image-container h4 span {
+    
+    font-size: 12px;
+}
+.main-container h5 {
+    
+    font-size: 19px;
+     
+    margin-top: 65px;
+   
+   
+   
+    width: 65px;
+}
+.main-container ul li a {
+    
+    font-size: 14px;
+    
+}
+
+}
