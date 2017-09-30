@@ -11,6 +11,9 @@ body{
 	min-height:100%;
 
 }
+a{
+  color: #f39c27
+}
 body img{
 	max-width:100%;
 }
@@ -122,10 +125,10 @@ a, a:hover, a:active, a:visited {
  }
 @media (max-width: 991px) {
 	body{
-		background-image:url(../img/991.png);
+		/*background-image:url(../img/991.png);
 	background-position:right top;
 	background-repeat:no-repeat;
-	background-attachment:fixed;
+	background-attachment:fixed;*/
 	}
 	 .main-container{
 		 background-image:none;
@@ -135,7 +138,7 @@ a, a:hover, a:active, a:visited {
 
 @media (max-width: 768px) {
 	body{
-		background-image:url(../img/768.png);
+		/*background-image:url(../img/768.png);*/
 
 	}
 	.main-container {
@@ -207,7 +210,7 @@ a, a:hover, a:active, a:visited {
 
 @media (max-width: 650px) {
 	body{
-		background-image:url(../img/650.png);
+		/*background-image:url(../img/650.png);*/
 
 	}
 	.main-container {
@@ -278,7 +281,7 @@ a, a:hover, a:active, a:visited {
 
 @media (max-width: 550px) {
 	body{
-		background-image:url(../img/550.png);
+		/*background-image:url(../img/550.png);*/
 
 	}
 	.main-container {
@@ -351,9 +354,9 @@ a, a:hover, a:active, a:visited {
 
 @media (max-width: 450px) {
 	body{
-		background-image:url(../img/450.png);
+		/*background-image:url(../img/450.png);
 		background-repeat:repeat-y;
-
+*/
 	}
 
 
