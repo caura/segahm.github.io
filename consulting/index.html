@@ -1,642 +1,381 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Caura - Consulting: Looker, Redshift, Vertica, BigQuery</title><meta property="og:site_name" content="Caura" />
-<meta property="og:title" content="Consulting: Looker, Redshift, Vertica, BigQuery" />
-<meta property="og:description" content="Data and Business Intelligence Architects, helping companies manage discovery and exploration" />
-<meta property="og:image" content="https://storage.googleapis.com/caura-west/static/logo.png" />
-<meta property="og:image" content="/consulting/uploads/7/6/8/1/76810969/rocket-launch-spacex_orig.jpg" />
-<meta property="og:image" content="/consulting/uploads/7/6/8/1/76810969/screen-shot-2012-09-19-at-6-02-00-pm.png?1468619243" />
-<meta property="og:image" content="/consulting/uploads/7/6/8/1/76810969/tesla-managed-bi_orig.jpg" />
-<meta property="og:image" content="/consulting/uploads/7/6/8/1/76810969/cloud-partner-horizontal-1.png" />
-<meta property="og:image" content="/consulting/uploads/7/6/8/1/76810969/primary-logo_1.png?164" />
-<meta property="og:url" content="/consulting/" />
 
-<meta name="description" content="Data and Business Intelligence Architects, helping companies manage discovery and exploration" />
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
 
-		<script type="text/javascript">
-    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
-      heap.load("3403525234");
-</script>
-<link rel="stylesheet" type="text/css" href="files/main_style.css%3F1491518088.css" title="wsite-theme-css" />
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
 
-<link href='http://fonts.googleapis.com/css?family=Stoke:400,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Mate+SC&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-<style type='text/css'>
-.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Stoke" !important;}
-#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#a1a1a1 !important;}
-.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
-.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Mate SC" !important;}
-#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
-.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
-#wsite-title {}
-.wsite-not-footer h2.wsite-content-title a, .wsite-not-footer .paragraph a, .wsite-not-footer blockquote a, #blogTable .blog-sidebar a, #blogTable .blog-comments a, #blogTable .blog-comments-bottom a, #wsite-com-store a, #wsite-com-product-gen a {color:#e9a476 !important;}
-.wsite-menu-default a {}
-.wsite-menu a {}
-.wsite-image div, .wsite-caption {}
-.galleryCaptionInnerText {}
-.fancybox-title {}
-.wslide-caption-text {}
-.wsite-phone {}
-.wsite-headline,.wsite-header-section .wsite-content-title {}
-.wsite-headline-paragraph,.wsite-header-section .paragraph {}
-.wsite-button-inner {}
-.wsite-not-footer blockquote {}
-.wsite-footer blockquote {}
-.blog-header h2 a {}
-#wsite-content h2.wsite-product-title {}
-.wsite-product .wsite-product-price a {}
-.wsite-not-footer h2.wsite-content-title a:hover, .wsite-not-footer .paragraph a:hover, .wsite-not-footer blockquote a:hover, #blogTable .blog-sidebar a:hover, #blogTable .blog-comments a:hover, #blogTable .blog-comments-bottom a:hover, #wsite-com-store a:hover, #wsite-com-product-gen a:hover {color:#da8044 !important;}
-@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:13px !important;}
-#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
-.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
-.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
-#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
-.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
-#wsite-title {}
-.wsite-menu-default a {}
-.wsite-menu a {}
-.wsite-image div, .wsite-caption {}
-.galleryCaptionInnerText {}
-.fancybox-title {}
-.wslide-caption-text {}
-.wsite-phone {}
-.wsite-headline,.wsite-header-section .wsite-content-title {}
-.wsite-headline-paragraph,.wsite-header-section .paragraph {}
-.wsite-button-inner {}
-.wsite-not-footer blockquote {}
-.wsite-footer blockquote {}
-.blog-header h2 a {}
-#wsite-content h2.wsite-product-title {}
-.wsite-product .wsite-product-price a {}
-}</style>
-<style>
-.wsite-background {background-image: url("uploads/7/6/8/1/76810969/background-images/1181528113.jpg") !important;background-repeat: no-repeat !important;background-position: 50% 50% !important;background-size: 100% !important;background-color: transparent !important;background: inherit;}
-body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
+
+
+
+<title>Data Consulting</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+<meta name="description" content="Work with Data Experts" />
+
+<link rel="icon" type="image/png" href="/favicon.ico" />
+
+<script type="text/javascript" src="js/rmarkdown.js"></script>
+<!-- GA Tags -->
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 </style>
-	</head>
-	<body class="short-header  wsite-theme-dark  wsite-page-index full-width-on "><div class="body-wrap">
-<!--
-	<div id="header">
-		<div class="nav-trigger hamburger">
-			<div class="open-btn">
-				<span class="mobile"></span>
-				<span class="mobile"></span>
-				<span class="mobile"></span>
-			</div>
-		</div>
-		<div id="sitename">{logo}</div>
-	</div>-->
-
-	<div id="wrapper">
-		<div class="bg-wrapper">
-
-			<div id="navigation">
-				<a href="index.html" title="Caura - Consulting: Looker, Redshift, Vertica, BigQuery" style="display: inline;">
-<img src="https://storage.googleapis.com/caura-west/static/logo.png" style="float: left;height: 120px"/>
-								</a>
-			<ul class="wsite-menu-default">
-		<li id="active" class="wsite-menu-item-wrap">
-			<a
-						href="index.html"
-				class="wsite-menu-item"
-				>
-				Data Analysis
-			</a>
-
-		</li>
-		<li id="pg455962069704746988" class="wsite-menu-item-wrap">
-			<a
-						href="publications.html"
-				class="wsite-menu-item"
-				>
-				Publications
-			</a>
-
-		</li>
-		<li id="pg448444670724868928" class="wsite-menu-item-wrap">
-			<a
-						href="data-stack.html"
-				class="wsite-menu-item"
-				>
-				Technologies
-			</a>
-
-		</li>
-</ul>
-</div>
-			<div class="banner-wrap wsite-background wsite-custom-background">
-				<div id="banner">
-					<div id="banner-container">
-<!--						<h2>{headline:text global="false"}</h2>-->
-						<p><span class="wsite-text wsite-headline-paragraph">
-	<span style="color:rgb(255, 255, 255)">Data &amp; Business Intelligence Architects</span>
-</span></p>
-						<div class="button-wrap"><div style="text-align:left;"><div style="height: 0px; overflow: hidden;"></div>
-<div style="height: 0px; overflow: hidden;"></div></div></div>
-					</div>
-				</div>
-			</div>
-			<div id="content-wrapper">
-				<div id="content"><div id="wsite-content" class="wsite-elements wsite-not-footer">
-	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -10px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:9.1826665050813%; padding:0 10px;">
-
-
-
-<div class="wsite-spacer" style="height:50px;"></div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:81.623702267389%; padding:0 10px;">
-
-
-
-<h2 class="wsite-content-title" style="text-align:center;"><font size="6">Experts Building Actionable Insights</font></h2>
-
-<div class="wsite-spacer" style="height:14px;"></div>
-
-<div class="paragraph" style="text-align:center;"><font color="#a1a1a1">You know your data! It can be messy or it can be stored in a dozen places, but you and your team are the closest to this data.<br /><br />How do you then take this knowledge and make it actionable?<br /><br />Work with us to combine your data knowledge with our tool expertise. Our team has deep experience with Databases, BI tools, and ETL/Data Pipelining tools. We understand how to translate "Stories" into requirements.</font><br /><br /></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-
-
-
-<div><div id="296496956658295624" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script src="http://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/Share" data-url="http://www.caura.co" data-counter="right"></script></div>
-
-
-
-</div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-
-
-
-<div class="wsite-spacer" style="height:27px;"></div>
-
-
-
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
-<hr class="styled-hr" style="width:100%;"></hr>
-<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
-
-<h2 class="wsite-content-title" style="text-align:center;">Broad Experience in Analytics</h2>
-
-<div class="wsite-spacer" style="height:27px;"></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-
-
-
-<h2 class="wsite-content-title" style="text-align:left;"><font style="font-weight:normal"><font size="4">Measure Churn and Account Health</font></font></h2>
-
-<div class="paragraph" style="text-align:left;"><font color="#a1a1a1">Visually contrasting health scores based on multitude of custom datasets - be that data from events, from a CRM tool (such as Salesforce), or from transactions</font></div>
-
-<div class="wsite-spacer" style="height:50px;"></div>
-
-<h2 class="wsite-content-title" style="text-align:left;"><font size="4">Control Advertising Spend</font></h2>
-
-<div class="paragraph" style="text-align:left;"><font color="#a1a1a1">Track performance of individual campaigns against lifetime event data.&nbsp;</font></div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-
-
-
-<h2 class="wsite-content-title" style="text-align:left;"><font size="4" style="font-weight:normal"><font size="4">Monitor&nbsp;</font>Operations</font></h2>
-
-<div class="paragraph" style="text-align:left;"><font color="#a1a1a1">Realtime inventory information. Timely worker performance and worker utilization stats<br />&#8203;</font></div>
-
-<div class="wsite-spacer" style="height:71px;"></div>
-
-<h2 class="wsite-content-title" style="text-align:left;"><font size="4">Forecast from Financial Transactions</font></h2>
-
-<div class="paragraph" style="text-align:left;"><font color="#a1a1a1">Transactions rolled up into key ratios. Ratios are "drillable", making transaction-level data available.</font></div>
-
-
-
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<h2 class="wsite-content-title" style="text-align:left;"><font size="4">More...</font></h2>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:9.1936312275295%; padding:0 10px;">
-
-
-
-<div class="wsite-spacer" style="height:50px;"></div>
-
-
-
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -10px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:9.5952262874328%; padding:0 10px;">
-
-
-
-<div class="wsite-spacer" style="height:26px;"></div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:80.801905578382%; padding:0 10px;">
-
-
-
-<div class="wsite-spacer" style="height:27px;"></div>
-
-<div><div style="height: 40px; overflow: hidden; width: 100%;"></div>
-<hr class="styled-hr" style="width:100%;"></hr>
-<div style="height: 40px; overflow: hidden; width: 100%;"></div></div>
-
-<h2 class="wsite-content-title" style="text-align:center;"><span>&#8203;&#65279;</span><font size="6">Types of Engagements</font></h2>
-
-<div class="wsite-spacer" style="height:27px;"></div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:9.6028681341856%; padding:0 10px;">
-
-
-
-<div class="wsite-spacer" style="height:26px;"></div>
-
-
-
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
-
-
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
-<a>
-<img src="uploads/7/6/8/1/76810969/rocket-launch-spacex_orig.jpg" alt="Picture" style="width:auto;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%"></div>
-</div></div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:32.802547770701%; padding:0 15px;">
-
-
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
-<a>
-<img src="uploads/7/6/8/1/76810969/screen-shot-2012-09-19-at-6-02-00-pm.png%3F1468619243" alt="Picture" style="width:auto;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%"></div>
-</div></div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:33.864118895966%; padding:0 15px;">
-
-
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
-<a>
-<img src="uploads/7/6/8/1/76810969/tesla-managed-bi_orig.jpg" alt="Picture" style="width:auto;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%"></div>
-</div></div>
-
-
-
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div class="wsite-spacer" style="height:14px;"></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -25px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:34.191326556696%; padding:0 25px;">
-
-
-
-<h2 class="wsite-content-title" style="text-align:left;">Projects</h2>
-
-<div class="paragraph" style="text-align:left;"><ul><li><font color="#a1a1a1">Implementation of Looker and setup of Data pipelines into BigQuery as a central data warehouse</font></li><li><font color="#a1a1a1">Developing in LookML a funnel analytics framework for flexible self-service</font></li><li><font color="#a1a1a1">Executing best practices to foster a data-driven decision making culture</font></li></ul></div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:31.593201438406%; padding:0 25px;">
-
-
-
-<h2 class="wsite-content-title" style="text-align:left;">On-going Support</h2>
-
-<div class="paragraph" style="text-align:left;"><ul><li><font color="#a1a1a1">Troubleshooting Redshift~BI performance issues</font></li><li><font color="#a1a1a1">Ad-hoc modeling assistance</font></li><li><span style="color:rgb(161, 161, 161)">Architectural setup and best practices</span></li></ul></div>
-
-
-
-</div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:34.215472004899%; padding:0 25px;">
-
-
-
-<h2 class="wsite-content-title" style="text-align:left;">Managed BI</h2>
-
-<div class="paragraph" style="text-align:left;"><ul><li><font color="#a1a1a1">Full administration, hosting and support for a combined BI and Data Warehouse solution on a monthly subscription</font></li></ul><font color="#a1a1a1">&#8203;</font><br /><br /></div>
-
-
-
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-</div>
-</div>
-			</div>
-		</div>
-		<div id="footer">
-			<div id="footer-content"><div class='wsite-elements wsite-footer'>
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -25px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:24.554455445545%; padding:0 25px;">
-
-
-
-<h2 class="wsite-content-title" style="text-align:left;"><font size="4">Location</font></h2>
-
-<div class="wsite-map"><iframe allowtransparency="true" frameborder="0" scrolling="no" style="width: 100%; height: 150px; margin-top: 10px; margin-bottom: 10px;" src="http://www.weebly.com/weebly/apps/generateMap.php?map=google&amp;elementid=752365103113231685&amp;ineditor=0&amp;control=3&amp;width=auto&amp;height=150px&amp;overviewmap=0&amp;scalecontrol=0&amp;typecontrol=0&amp;zoom=15&amp;long=-122.3320708&amp;lat=47.6062095&amp;domain=www&amp;point=1&amp;align=1&amp;reseller=false"></iframe></div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:75.445544554455%; padding:0 25px;">
-
-
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -25px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:41.309359151683%; padding:0 25px;">
-
-
-
-<h2 class="wsite-content-title">Technology Partners</h2>
-
-<div class="wsite-spacer" style="height:10px;"></div>
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='https://cloud.google.com/partners/directory/#?q=caura#search' target='_blank'>
-<img src="uploads/7/6/8/1/76810969/cloud-partner-horizontal-1.png" alt="Picture" style="width:172;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">Google BigQuery</div>
-</div></div>
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='https://looker.com/partners' target='_blank'>
-<img src="uploads/7/6/8/1/76810969/primary-logo_1.png%3F164" alt="Picture" style="width:164;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%"></div>
-</div></div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 25px;">
-
-
-
-<div class="wsite-spacer" style="height:50px;"></div>
-
-
-
-				</td>				<td class="wsite-multicol-col" style="width:25.357307514984%; padding:0 25px;">
-
-
-
-<h2 class="wsite-content-title" style="text-align:left;"><font size="4">Contact Us</font></h2>
-
-<div style="text-align:left;"><div style="height:10px;overflow:hidden"></div>
-<span class="wsite-social wsite-social-default"><a class='first-child wsite-social-item wsite-social-twitter' href='https://twitter.com/nesovok' target='_blank'><span class='wsite-social-item-inner'></span></a><a class='last-child wsite-social-item wsite-social-linkedin' href='https://www.linkedin.com/in/sergmir' target='_blank'><span class='wsite-social-item-inner'></span></a></span>
-<div style="height:10px;overflow:hidden"></div></div>
-
-<div class="paragraph" style="text-align:left;">&copy; 2017 Caura, Inc.</div>
-
-<div class="wsite-spacer" style="height:14px;"></div>
-
-
-
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-
-
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div></div></div>
-		</div>
-	</div>
-
-	<div class="navmobile-wrapper">
-		<div id="navmobile" class="nav"><ul class="wsite-menu-default">
-		<li id="active" class="wsite-menu-item-wrap">
-			<a
-						href="index.html"
-				class="wsite-menu-item"
-				>
-				Data Analysis
-			</a>
-
-		</li>
-		<li id="pg455962069704746988" class="wsite-menu-item-wrap">
-			<a
-						href="publications.html"
-				class="wsite-menu-item"
-				>
-				Publications
-			</a>
-
-		</li>
-		<li id="pg448444670724868928" class="wsite-menu-item-wrap">
-			<a
-						href="data-stack.html"
-				class="wsite-menu-item"
-				>
-				Technologies
-			</a>
-
-		</li>
-		<li id="pg566224256546557873" class="wsite-menu-item-wrap">
-			<a
-						href="experience.html"
-				class="wsite-menu-item"
-				>
-				Experience
-			</a>
-
-		</li>
-</ul>
-</div>
-	</div>
-
-</div>
-
-
-<script language="javascript" src="files/theme/plugins.js%3F1471906529"></script>
-<script language="javascript" src="files/theme/custom.js%3F1471906529"></script>
-<script language="javascript" src="files/theme/mobile.js%3F1471906529"></script>
-
-
-		<script type="text/javascript">
-
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-7870337-1']);
-	_gaq.push(['_setDomainName', 'none']);
-	_gaq.push(['_setAllowLinker', true]);
-	_gaq.push(['_trackPageview']);
-
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-
-	_W.Analytics = _W.Analytics || {'trackers': {}};
-	_W.Analytics.trackers.wGA = '_gaq';
-
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
 </script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div id="rStudioHeader" class="alwaysShrunk">
+  <div class="innards bandContent">
+    <div>
+      <a class="productName" href="index.html">Caura & Co.</a>
+    </div>
+
+    <div id="menu">
+      <div id="menuToggler"></div>
+      <div id="menuItems">
+        <a class="menuItem" href="https://s2blogs.com">Blog</a>
+        <a class="menuItem gitHubText" href="https://github.com/rstudio/rmarkdown">Source on GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+#TOC {
+  margin-left: 35px;
+  margin-top: 90px;
+}
+</style>
+
+<script type="text/javascript">
+$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+</script>
+
+
+<div id="pageContent" class="standardPadding">
+  <div class="articleBandContent">
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Data Consulting</h1>
+
+</div>
+
+
+<p>You can render collections of R Markdown documents as a website using the <code>rmarkdown::render_site</code> function. This article describes the basics of creating websites with R Markdown and provides some examples which you can use as a starting point for your own websites.</p>
+<p>The features described here are available only within the most recent version of the <strong>rmarkdown</strong> package (v0.9.6) which you can install from CRAN as follows:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;rmarkdown&quot;</span>)</code></pre></div>
+<p>The RStudio IDE also includes integrated support for developing R Markdown websites. These features are available in version 1.0 or higher of RStudio so you should be sure to update RStudio prior to using R Markdown websites. You can download the latest version of RStudio here: <a href="https://www.rstudio.com/products/rstudio/download/" class="uri">https://www.rstudio.com/products/rstudio/download/</a>.</p>
+<div id="analytics-bie" class="section level2">
+<h2>Analytics &amp; BIE</h2>
+<div id="bigquery" class="section level3">
+<h3>BigQuery</h3>
+</div>
+<div id="looker" class="section level3">
+<h3>Looker</h3>
+</div>
+</div>
+<div id="dnnnlp-mlai" class="section level2">
+<h2>DNN/NLP ML/AI</h2>
+<div id="max-entropy" class="section level3">
+<h3>Max Entropy</h3>
+</div>
+<div id="eq-check" class="section level3">
+<h3>EQ Check</h3>
+</div>
+<div id="empathy" class="section level3">
+<h3>Empathy</h3>
+</div>
+<div id="try-it" class="section level3">
+<h3>Try It</h3>
+</div>
+</div>
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<div id="rStudioFooter" class="band full">
+<div class="bandContent">
+  <div id="copyright">&copy; Copyright 2017 Caura & Co.</div>
+  <div id="logos">
+  </div>
+</div>
+</div>
+
+<!-- disqus -->
+<!--
+ <div id="disqus_thread" class="standardPadding"></div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var disqus_shortname = '<shortname>'; // required: replace example with your forum shortname
+
+        (function() {
+            // create disqus script tag
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+            // determine container
+            var container = document.getElementsByTagName('body')[0] || document.getElementsByTagName('head')[0];
+
+            // append script tag enclosed by google indexing suppression comment
+            container.appendChild(document.createComment('googleoff: all'));
+            container.appendChild(dsq);
+            container.appendChild(document.createComment('googleon: all'));
+        })();
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+
+</div>
+</div>
+
+</div>
 
 <script>
 
-	(function(jQuery) {
-		try {
-			if (jQuery) {
-				jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
-				var $commentFrame = jQuery('#commentArea iframe');
-				if ($commentFrame.length > 0) {
-					var frameHeight = jQuery($commentFrame[0].contentWindow.document).height() + 50;
-					$commentFrame.css('min-height', frameHeight + 'px');
-				}
-				if (jQuery('.product-button').length > 0){
-					jQuery(document).ready(function(){
-						jQuery('.product-button').parent().each(function(index, product){
-							if(jQuery(product).attr('target') == 'paypal'){
-								if (!jQuery(product).find('> [name="bn"]').length){
-									jQuery('<input>').attr({
-										type: 'hidden',
-										name: 'bn',
-										value: 'DragAndDropBuil_SP_EC'
-									}).appendTo(product);
-								}
-							}
-						});
-					});
-				}
-			}
-			else {
-				// Prototype
-				$$('div.blog-social div.fb-like').each(function(div) {
-					div.className = 'blog-social-item blog-fb-like';
-				});
-				$$('#commentArea iframe').each(function(iframe) {
-					iframe.style.minHeight = '410px';
-				});
-			}
-		}
-		catch(ex) {}
-	})(window._W && _W.jQuery);
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
 
-</script>
-<div id="eu-cookie" class="notification" style="display: none;">
-	<span id="eu-cookie-content"></span>
-	<span id="eu-cookie-close">&#10005;</span>
-</div>
 
-<script type="text/javascript">
-	(function($) {
-		window.cookie_location = '';
-		// this cookie_content should already be pre-encoded from CookieSettingView.js
-		window.cookie_content = '' || _W.stl('templates.publish.virtual-includes.footerCode_1');
-		window.cookie_policy_key = '755002410713527141_cookie_policy';
-		window.cookie_content_hash = '';
-
-		if (!_W.getCookie(window.cookie_policy_key) || _W.getCookie(window.cookie_policy_key) !== window.cookie_content_hash){
-			if (window.cookie_location === 'top' || window.cookie_location === 'bottom'){
-				$('#eu-cookie-content').text(decodeURIComponent(window.cookie_content));
-				(window.cookie_location === 'top') ? animateFromTop() : animateFromBottom();
-				$('#eu-cookie').show();
-			}
-		}
-
-		$('#eu-cookie-close').click(function(){
-			_W.setCookie(window.cookie_policy_key, window.cookie_content_hash, 100000);
-			$('#eu-cookie').hide();
-		});
-
-		function animateFromTop(){
-			$('#eu-cookie').css({
-				'top': '0px',
-				'animation': 'reveal-top 1 2s'
-			});
-		}
-
-		function animateFromBottom(){
-			$('#eu-cookie').css({
-				'bottom': '0px',
-				'animation': 'reveal-bottom 1 2s'
-			});
-		}
-	})(window._W && _W.jQuery);
 </script>
 
 
-	</body>
+</body>
 </html>
