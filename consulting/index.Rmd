@@ -5,34 +5,71 @@ output:
     highlight: tango
     toc: true
     toc_float:
-      collapsed: false
+      collapsed: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+We focus on high value-added data projects at rapidly growing technology companies.
 
-You can render collections of R Markdown documents as a website using the `rmarkdown::render_site` function. This article describes the basics of creating websites with R Markdown and provides some examples which you can use as a starting point for your own websites.
+Our engagement process is very thourough. It involves a deep conversation with a technical member of our staff. Sales people are not and will never be involved. To make sure that's the case, we have a working EQ (i.e. Empathy IQ) engine for all written conversations. Yes, we are very serious about this "no-sales" commitment.
 
-The features described here are available only within the most recent version of the **rmarkdown** package (v0.9.6) which you can install from CRAN as follows:
+**Inspecting one company's data** is like having a doctor ask the patient to take off his pants. Its very revealing! While it might be tempting to seek out a tool specialist when you need one, best results are achieved with a general practitioner. Collectively we are vendor/technology agnostic. We do have some vendor partnership for legacy reasons, but we are not afraid to make recommendations counter to these (and frequently do).
 
-```r
-install.packages("rmarkdown")
+## Analytics
+
+Google BigQuery is a [partner technology](https://cloud.google.com/partners/directory/#?q=caura#search). We have completed many BQ projects of different complexity (both in Legacy and StandardSQL).
+
+Some links:
+[[link1](https://discourse.looker.com/t/developer-and-production-pdts-in-looker/3567)]
+[[link2](https://discourse.looker.com/t/bigquery-migrating-from-legacy-sql-to-standard-sql/3568)]
+[[link3](https://discourse.looker.com/t/incremental-pdts-on-bigquery-or-how-to-produce-daily-snapshots-on-scd-type-1-schemas/2666)]
+[[link4](https://stackoverflow.com/questions/35807572/bigquery-pivot-data-rows-columns/43711803#43711803)]
+[[link5](https://stackoverflow.com/questions/42151828/google-bigquery-taking-too-long-but-small-change)]
+
+We also have a close relationship with Looker. This [post](https://s2blogs.com/why-did-i-become-a-data-consultant-and-a-looker-partner-7963c3e07508) from 2016 might be helpful.
+
+R is our favorite tool. We like using R in almost all projects. We even pushed it into  [corporate thinking](https://looker.com/blog/predict-lending-clubs-loan-portfolio-returns-using-hp-vertica-looker-and-distributed-r).
+
+## Data Warehousing
+
+When strong data governance is in place, we can help make proactive recommendations using [traditional approach](https://discourse.looker.com/t/designing-a-data-warehouse-what-would-a-bi-solution-recommend/1231/5) and helping you put plans into place to maintain the architecture [post-deployment](https://discourse.looker.com/t/optimize-query-performance-with-lookml-a-case-study/1219).
+
+At many companies the above no longer is feasible. We can help with long-term process and plan to monitor performance objectives against analytical needs.
+
+## DNN, NLP
+
+This is becoming a growing field for us. Please contact for further details. Also, see the product below.
+
+### Entropy AI
+
+Entropy gleans its insights from deep NLU (subtopic in NLP) analysis of written communication.
+
+Examples:
+
+1)
+```{r, eval=FALSE}
+entropy:analyze('Hello, we are on a mission to change how consulting is done.')
+```
+```{r, echo=FALSE}
+c("Result","driven","Passive voice","Concise","Informal","Thoughtful", "Assertive")
 ```
 
-The RStudio IDE also includes integrated support for developing R Markdown websites. These features are available in version 1.0 or higher of RStudio so you should be sure to update RStudio prior to using R Markdown websites. You can download the latest version of RStudio here: <https://www.rstudio.com/products/rstudio/download/>.
+2)
+```{r, eval=FALSE}
+entropy:analyze("Don't get us wrong, we love sales people. They are nice people. We like spending time with them. But we also belief that in consulting a direct connection with a technical member is key to a successful engagement.")
+```
+```{r, echo=FALSE}
+c("Positive","Formal","Verbose")
+```
 
-## Analytics & BIE
 
-### BigQuery
-### Looker
-
-## DNN/NLP ML/AI
-
-### Max Entropy
-
-### EQ Check
-
-### Empathy
+There is a lot of recent research that contributed to this product. For the purpose of simplicity, recall the Maximum likelihood models from graduate school. At its core this is a variation, in a simplified form called **Max Entropy**:
+<center><img src="https://user-images.githubusercontent.com/1756903/32816722-17b7e470-c96f-11e7-8225-9ee0e0882343.png" width="300"></center>
 
 ### Try It
+
+<center>[![](entropy.gif)](https://github.com/caura/s2bot)</center>
+
+## Keep Me Updated!
