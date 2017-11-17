@@ -1,5 +1,5 @@
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color:#fff;
 
   font-weight: normal;
@@ -513,7 +513,7 @@ p {
   line-height: 25px;
 }
 
-#rStudioFooter .bandContent {
+/*#rStudioFooter .bandContent {
   color: #fff;
 
   display: flex;
@@ -530,7 +530,7 @@ p {
 #rStudioFooter .bandContent #logos {
   flex-shrink: 1;
 }
-
+*/
 #rStudioFooter .bandContent .footerLogo {
   display: inline-block;
   height: 25px;
@@ -867,3 +867,22 @@ iframe.scale65 {
   padding-right: 5px;
   padding-bottom: 5px;
 }
+.toc-content { padding-bottom: 120px; }
+.nav.navbar-nav.navbar-right .fa.fa-github.fa-lg {display: inline-block;margin-left: 0;}
+#rStudioFooter { height: auto; }
+#rStudioFooter.band {background-color: #75aadb;padding:0;color: #fff;font-weight: 300;font-size: 12px;line-height: 35px;position: fixed;left: 0;
+right: 0;text-align: center;bottom: 0;}
+#rStudioFooter.band{background-color: #333;text-align: center;color: #aa7;}
+/*.tocify-extend-page { max-height:120px !important; }*/
+.navbar-inverse { background: #eff1f5; border: 0px; }
+.navbar-inverse .navbar-brand { color: #384053; }
+.navbar-inverse .navbar-nav>li>a{color: #4F4F4F; font-size:14px;}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background: #384053; color: #fff; }
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus { color: #384053; }
+.navbar-inverse .navbar-nav>li>a:hover .fa.fa-github.fa-lg { background-image: url(../images/gitHubLogo-hover.svg)  }
+div.tocify { border-radius: 0px; }
+.tocify .tocify-item a, .tocify .list-group-item { padding: 10px 5px; }
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { background: #384053; color: #fff; }
+.navbar-inverse .navbar-toggle .icon-bar {background: #384053;}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus  {background: #384053;}
+.navbar-inverse .navbar-toggle:hover .icon-bar, .navbar-inverse .navbar-toggle:focus .icon-bar { background: #fff; }
