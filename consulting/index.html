@@ -104,7 +104,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
+<link rel="stylesheet" href="css\rmarkdown.css" type="text/css" />
 
 </head>
 
@@ -159,7 +159,6 @@ $(document).ready(function ()  {
     // establish options
     var options = {
       selectors: "h1,h2,h3",
-      extendPage: false,
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
@@ -171,11 +170,9 @@ $(document).ready(function ()  {
     options.showAndHide = true;
     options.smoothScroll = true;
 
-
     // tocify
     var toc = $("#TOC").tocify(options).data("toc-tocify");
 });
- 
 </script>
 
 <style type="text/css">
@@ -263,8 +260,8 @@ div.tocify {
         <li>
   <a href="index.html">Consulting</a>
 </li>
-<li> 
-  <a href="index.html#entropy_ai">EQ AI</a>
+<li>
+  <a href="#entropy-ai" onclick="ScrollToPos('#entropy-ai')">EQ AI</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -312,7 +309,9 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
   <div class="articleBandContent">
 
 <div class="fluid-row" id="header">
- 
+
+
+
 <h1 class="title toc-ignore">Data Consulting</h1>
 
 </div>
@@ -343,13 +342,13 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <ol style="list-style-type: decimal">
 <li></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">entropy:<span class="kw">analyze</span>(<span class="st">&#39;Hello, we are on a mission to change how consulting is done.&#39;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">entropy<span class="op">:</span><span class="kw">analyze</span>(<span class="st">&#39;Hello, we are on a mission to change how consulting is done.&#39;</span>)</code></pre></div>
 <pre><code>## [1] &quot;Result&quot;        &quot;driven&quot;        &quot;Passive voice&quot; &quot;Concise&quot;      
 ## [5] &quot;Informal&quot;      &quot;Thoughtful&quot;    &quot;Assertive&quot;</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">entropy:<span class="kw">analyze</span>(<span class="st">&quot;Don&#39;t get us wrong, we love sales people. They are nice people. We like spending time with them. But we also belief that in consulting a direct connection with a technical member is key to a successful engagement.&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">entropy<span class="op">:</span><span class="kw">analyze</span>(<span class="st">&quot;Don&#39;t get us wrong, we love sales people. They are nice people. We like spending time with them. But we also belief that in consulting a direct connection with a technical member is key to a successful engagement.&quot;</span>)</code></pre></div>
 <pre><code>## [1] &quot;Positive&quot; &quot;Formal&quot;   &quot;Verbose&quot;</code></pre>
 There is a lot of recent research that contributed to this product. For the purpose of simplicity, recall the Maximum likelihood models from graduate school. At its core this is a variation, in a simplified form called <strong>Max Entropy</strong>:
 <center>
@@ -437,6 +436,21 @@ There is a lot of recent research that contributed to this product. For the purp
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 -->
+<script>
+    function ScrollToPos(target,act){
+         
+          if(target == "#"){
+         
+             $('html,body').animate({ scrollTop: 0 }, 1000);
+         
+            }else{
+         
+             $('html,body').animate({ scrollTop: $(target).offset().top }, 1000);
+         
+          } 
+         
+         }
+</script>
 
 
 </div>
@@ -454,9 +468,6 @@ $(document).ready(function () {
   bootstrapStylePandocTables();
 });
 
-
- 
-         
 
 </script>
 
