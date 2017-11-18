@@ -159,7 +159,6 @@ $(document).ready(function ()  {
     // establish options
     var options = {
       selectors: "h1,h2,h3",
-      extendPage: false,
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
@@ -171,16 +170,9 @@ $(document).ready(function ()  {
     options.showAndHide = true;
     options.smoothScroll = true;
 
-
     // tocify
     var toc = $("#TOC").tocify(options).data("toc-tocify");
 });
-
-// function gototab(reload)
-//    {
-//     window.location.hash = '#entropy_ai';
-//     window.location.reload(true);
-//    }
 </script>
 
 <style type="text/css">
@@ -268,7 +260,7 @@ div.tocify {
         <li>
   <a href="index.html">Consulting</a>
 </li>
-<li> 
+<li>
   <a href="#entropy-ai" onclick="ScrollToPos('#entropy-ai')">EQ AI</a>
 </li>
       </ul>
@@ -317,7 +309,9 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
   <div class="articleBandContent">
 
 <div class="fluid-row" id="header">
- 
+
+
+
 <h1 class="title toc-ignore">Data Consulting</h1>
 
 </div>
@@ -442,6 +436,21 @@ There is a lot of recent research that contributed to this product. For the purp
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 -->
+<script>
+    function ScrollToPos(target,act){
+         
+          if(target == "#"){
+         
+             $('html,body').animate({ scrollTop: 0 }, 1000);
+         
+            }else{
+         
+             $('html,body').animate({ scrollTop: $(target).offset().top }, 1000);
+         
+          } 
+         
+         }
+</script>
 
 
 </div>
@@ -459,21 +468,6 @@ $(document).ready(function () {
   bootstrapStylePandocTables();
 });
 
-
-   function ScrollToPos(target,act){
-         
-          if(target == "#"){
-         
-             $('html,body').animate({ scrollTop: 0 }, 1000);
-         
-            }else{
-         
-             $('html,body').animate({ scrollTop: $(target).offset().top }, 1000);
-         
-          } 
-         
-         }
-         
 
 </script>
 
