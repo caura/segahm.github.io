@@ -886,3 +886,4 @@ div.tocify { border-radius: 0px; }
 .navbar-inverse .navbar-toggle .icon-bar {background: #384053;}
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus  {background: #384053;}
 .navbar-inverse .navbar-toggle:hover .icon-bar, .navbar-inverse .navbar-toggle:focus .icon-bar { background: #fff; }
+.tocify-extend-page { max-height: 0px;} 
