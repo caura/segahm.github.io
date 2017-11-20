@@ -68,8 +68,7 @@ c("Positive","Formal","Verbose")
 There is a lot of recent research that contributed to this product. For the purpose of simplicity, recall the Maximum likelihood models from graduate school. At its core this is a variation, in a simplified form called **Max Entropy**:
 <center><img src="https://user-images.githubusercontent.com/1756903/32816722-17b7e470-c96f-11e7-8225-9ee0e0882343.png" width="300"></center>
 
-### Try It
 
-<center>[![](entropy.gif)](https://github.com/caura/s2bot)</center>
+<center><b>Try It: </b>[![](entropy.gif)](https://github.com/caura/s2bot)</center>
 
 ## Keep Me Updated!
