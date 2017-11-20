@@ -135,12 +135,12 @@ h2{
       }
       .gm-style img { max-width: none; }
       #video-overlay { height: 100vh; max-width: 100%;}
-      footer { z-index: 20; padding: 0 16px; position: fixed; left: 0; right: 0;bottom: 0; display: flex;justify-content:space-between;background-color: rgba(34,44,51,0.8);text-align: center;color: #aa7;}
-      footer .text {font-size: 12px;text-align: center; line-height: 35px;color: #aa7; opacity: 1;}
+      footer { z-index: 20; padding: 0 16px; position: fixed; left: 0; right: 0;bottom: 0; display: flex;background-color: rgba(34,44,51,0.8);text-align: center;color: #aa7;}
+      footer .text {font-size: 12px;text-align: left; width: 50%; line-height: 35px;color: #aa7; opacity: 1;}
       footer .text a {color: #aa7; display: inline-block; text-decoration: none; }
       @media only screen and (max-width: 480px) { 
           footer { flex-direction: column; position: relative; background:rgba(34,44,51,0.98);}
-          
+           footer .text{ width: 100%; text-align: center; }
         }
       </style>
       <script type="text/javascript" async="" src="https://cdn.heapanalytics.com/js/heap-3403525234.js"></script><script type="text/javascript">
