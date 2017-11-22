@@ -24,7 +24,7 @@ Google BigQuery is a [partner technology](https://cloud.google.com/partners/dire
 Some links:
 <a href="https://discourse.looker.com/t/developer-and-production-pdts-in-looker/3567">link1</a>, <a href="https://discourse.looker.com/t/bigquery-migrating-from-legacy-sql-to-standard-sql/3568">link2</a>, <a href="https://discourse.looker.com/t/incremental-pdts-on-bigquery-or-how-to-produce-daily-snapshots-on-scd-type-1-schemas/2666">link3</a>, <a href="https://stackoverflow.com/questions/35807572/bigquery-pivot-data-rows-columns/43711803#43711803">link4</a>, <a href="https://stackoverflow.com/questions/42151828/google-bigquery-taking-too-long-but-small-change">link5</a>
 
-We also have a close relationship with Looker. This [post](https://segahmeer.com/post/why-did-i-become-a-data-consultant-and-a-looker-partner) from 2016 might be helpful.
+We also have a close relationship with Looker. This [post](http://segahmeer.com/post/why-did-i-become-a-data-consultant-and-a-looker-partner) from 2016 might be helpful.
 
 R is our favorite tool. We like using R in almost all projects. We even pushed it into  [corporate thinking](https://looker.com/blog/predict-lending-clubs-loan-portfolio-returns-using-hp-vertica-looker-and-distributed-r).
 
