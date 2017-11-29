@@ -66,5 +66,3 @@ There is a lot of recent research that contributed to this product. For the purp
 
 
 <center><b>Try It: </b>[![](entropy.gif)](https://github.com/caura/entropy-ai-bot)</center>
-
-## Keep Me Updated!
