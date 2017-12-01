@@ -13,9 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 We focus on high value-added data projects at rapidly growing technology companies.
 
-Our engagement process is very thourough. It involves a deep conversation with a technical member of our staff. Sales people are not and will never be involved. To make sure that's the case, we have a working EQ (i.e. Empathy IQ) engine for all written conversations. Yes, we are very serious about this "no-sales" commitment.
+Our engagement process is very thorough It involves a deep conversation with a technical member of our staff. Sales people are not and will never be involved. To make sure that's the case, we have a working EQ (i.e. Empathy IQ) engine for all written conversations. Yes, we are very serious about this "no-sales" commitment.
 
-**Inspecting one company's data** is like having a doctor ask the patient to take off his pants. Its very revealing! While it might be tempting to seek out a tool specialist when you need one, best results are achieved with a general practitioner. Collectively we are vendor/technology agnostic. We do have some vendor partnership for legacy reasons, but we are not afraid to make recommendations counter to these (and frequently do).
+**Inspecting one company's data** is like having a doctor ask the patient to take off his pants. It's very revealing! While it might be tempting to seek out a tool specialist when you need one, best results are achieved with a general practitioner. Collectively we are vendor/technology agnostic. We do have some vendor partnership for legacy reasons, but we are not afraid to make recommendations counter to these (and frequently do).
 
 ## Analytics
 
