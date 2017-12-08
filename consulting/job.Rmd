@@ -1,0 +1,49 @@
+---
+title: "Paid Trial Assignment"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Thank you for responding to this job ad. The purpose of this assignment is to give you a flavor of the type of work you would be doing. 
+
+If successful, with this task you will significantly impact how I do work, so please take this seriously.
+
+### Payment
+
+Please apply to get paid through [upwork](https://www.upwork.com/ab/applicants/938923374151163904/job-details) (if you prefer an alternative payment method to Upwork, please let me know what that is).
+https://www.upwork.com/ab/applicants/938923374151163904/job-details
+
+### Goal
+
+Schedule a call for me with a qualified freelance writer.
+
+### Info / Criteria
+
+I am looking for a freelance writer, to help me along the following dimensions:
+
+* proofreading / editing thought leadership essays
+* helping to write pitch letters
+* make recommendations on publications (which angle, which publication, etc)
+
+You are welcome to be creative about this. The likely successful candidates:
+
+* will have a journalist background (i.e. featured in respectable publications)
+* will be found using Google Search keywords:<br>
+`site:contently.com/pub <the atlantic>` - where <...> represents the name of any respectable publication
+* have been featured on one of the following:
+    + The Atlantic
+    + The New Yorker
+    + The New York Times
+    + Slate
+    + Quartz
+    + Wired
+* are comfortable with writing **for** the technical audience
+
+### Scope of your responsibilities
+
+* research
+* initial written exchange
+* call scheduling
