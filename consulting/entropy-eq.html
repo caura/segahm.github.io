@@ -9,9 +9,11 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="Zhenya &amp; Segah" />
 
+<meta name="date" content="2017-12-20" />
 
-<title>Paid Trial Assignment</title>
+<title>Entropy EQ</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -194,52 +196,42 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 
 
-<h1 class="title toc-ignore">Paid Trial Assignment</h1>
+<h1 class="title toc-ignore">Entropy EQ</h1>
+<h4 class="author"><em>Zhenya &amp; Segah</em></h4>
+<h4 class="date"><em>12/20/2017</em></h4>
 
 </div>
 
 
-<p>Thank you for responding to this job ad. The purpose of this assignment is to give you a flavor of the type of work you would be doing.</p>
-<p>If successful, with this task you will significantly impact how I do work, so please take this seriously.</p>
-<div id="payment" class="section level3">
-<h3>Payment</h3>
-<p>Please apply to get paid through <a href="https://www.upwork.com/ab/applicants/938923374151163904/job-details">upwork</a> (if you prefer an alternative payment method to Upwork, please let me know what that is). <a href="https://www.upwork.com/ab/applicants/938923374151163904/job-details" class="uri">https://www.upwork.com/ab/applicants/938923374151163904/job-details</a></p>
+<p>Entropy gleans its insights from deep NLU (subtopic in NLP) analysis of written communication.</p>
+In its simplified form, this is an expanded version of Maximum likelihood model called Max Entropy:<br/>
+<center>
+<img width="300" src="https://user-images.githubusercontent.com/1756903/32816722-17b7e470-c96f-11e7-8225-9ee0e0882343.png">
+</center>
+<div id="r-examples" class="section level2">
+<h2>R Examples:</h2>
+<pre class="r"><code>library(entropy)
+languageML(&#39;Hello, we are on a mission to change written communication.&#39;)</code></pre>
+<pre class="r"><code>## [1] &quot;Result&quot;        &quot;driven&quot;        &quot;Passive voice&quot; &quot;Concise&quot;      
+## [5] &quot;Informal&quot;      &quot;Thoughtful&quot;    &quot;Assertive&quot;</code></pre>
+<pre class="r"><code>languageML(&quot;Don&#39;t get us wrong, we love existing tools such as Gmail and Slack. Yet, we believe that our communication is poor (Emojis - come on...). We are capable of much more!&quot;)</code></pre>
+<pre class="r"><code>## [1] &quot;Thoughtful&quot; &quot;Inormal&quot;   &quot;Verbose&quot;</code></pre>
 </div>
-<div id="goal" class="section level3">
-<h3>Goal</h3>
-<p>Schedule a call for me with a qualified freelance writer.</p>
+<div id="architecture" class="section level2">
+<h2>Architecture</h2>
+<p><img width="700" src="images/entropy architecture.svg"></p>
 </div>
-<div id="info-criteria" class="section level3">
-<h3>Info / Criteria</h3>
-<p>I am looking for a freelance writer, to help me along the following dimensions:</p>
-<ul>
-<li>proofreading / editing thought leadership essays</li>
-<li>helping to write pitch letters</li>
-<li>make recommendations on publications (which angle, which publication, etc)</li>
-</ul>
-<p>You are welcome to be creative about this. The likely successful candidates:</p>
-<ul>
-<li>will have a journalist background (i.e. featured in respectable publications)</li>
-<li>will be found using Google Search keywords:<br> <code>site:contently.com/pub &lt;the atlantic&gt;</code> - where &lt;…&gt; represents the name of any respectable publication</li>
-<li>have been featured on one of the following:
-<ul>
-<li>The Atlantic</li>
-<li>The New Yorker</li>
-<li>The New York Times</li>
-<li>Slate</li>
-<li>Quartz</li>
-<li>Wired</li>
-</ul></li>
-<li>are comfortable with writing <strong>for</strong> the technical audience</li>
-</ul>
-</div>
-<div id="scope-of-your-responsibilities" class="section level3">
-<h3>Scope of your responsibilities</h3>
-<ul>
-<li>research</li>
-<li>initial written exchange</li>
-<li>call scheduling</li>
-</ul>
+<div id="demo" class="section level2">
+<h2>Demo</h2>
+Please reach out to us: <a href="mailto:entropy@caura.co">entropy@caura.co</a>
+<center>
+<a href="mailto:entropy@caura.co?subject=demo"><img src="entropy.gif" /></a>
+</center>
+<p><br> <br></p>
+<blockquote>
+<p>Places where linguists traditionally look to see [entropy] are not where the fundamentals of language are.</p>
+<p>– <cite>Marcelo A. Montemurro and Damián H. Zanette</cite></p>
+</blockquote>
 </div>
 
 

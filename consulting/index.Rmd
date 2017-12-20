@@ -1,5 +1,7 @@
 ---
 title: "Data Consulting"
+author: "Segah Meer"
+date: "07/01/2016"
 output:
   html_document:
     highlight: tango
@@ -36,32 +38,4 @@ At many companies the above no longer is feasible. We can help with long-term pr
 
 ## DNN, NLP
 
-This is becoming a growing field for us. Please contact for further details. Also, see the product below.
-
-### Entropy AI
-Entropy gleans its insights from deep NLU (subtopic in NLP) analysis of written communication.
-
-Examples:
-
-1)
-```{r, eval=FALSE}
-entropy:analyze('Hello, we are on a mission to change how consulting is done.')
-```
-```{r, echo=FALSE}
-c("Result","driven","Passive voice","Concise","Informal","Thoughtful", "Assertive")
-```
-
-2)
-```{r, eval=FALSE}
-entropy:analyze("Don't get us wrong, we love sales people. They are nice people. We like spending time with them. But we also belief that in consulting a direct connection with a technical member is key to a successful engagement.")
-```
-```{r, echo=FALSE}
-c("Positive","Formal","Verbose")
-```
-
-
-There is a lot of recent research that contributed to this product. For the purpose of simplicity, recall the Maximum likelihood models from graduate school. At its core this is a variation, in a simplified form called **Max Entropy**:
-<center><img src="https://user-images.githubusercontent.com/1756903/32816722-17b7e470-c96f-11e7-8225-9ee0e0882343.png" width="300"></center>
-
-<center>[![](entropy.gif)](mailto:entropy@caura.co?subject=demo)</center>
-
+This is becoming a growing field for us. Please contact for further details or see our [partner product](/consulting/entropy-eq.html).

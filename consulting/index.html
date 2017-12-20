@@ -9,7 +9,9 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="Segah Meer" />
 
+<meta name="date" content="2016-07-01" />
 
 <title>Data Consulting</title>
 
@@ -48,49 +50,6 @@
 <script type="text/javascript" src="js/rmarkdown.js"></script>
 
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-pre, code { background-color: #f8f8f8; }
-code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code > span.dt { color: #204a87; } /* DataType */
-code > span.dv { color: #0000cf; } /* DecVal */
-code > span.bn { color: #0000cf; } /* BaseN */
-code > span.fl { color: #0000cf; } /* Float */
-code > span.ch { color: #4e9a06; } /* Char */
-code > span.st { color: #4e9a06; } /* String */
-code > span.co { color: #8f5902; font-style: italic; } /* Comment */
-code > span.ot { color: #8f5902; } /* Other */
-code > span.al { color: #ef2929; } /* Alert */
-code > span.fu { color: #000000; } /* Function */
-code > span.er { color: #a40000; font-weight: bold; } /* Error */
-code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #000000; } /* Constant */
-code > span.sc { color: #000000; } /* SpecialChar */
-code > span.vs { color: #4e9a06; } /* VerbatimString */
-code > span.ss { color: #4e9a06; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #000000; } /* Variable */
-code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code > span.ex { } /* Extension */
-code > span.at { color: #c4a000; } /* Attribute */
-code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 
 
 <style type="text/css">
@@ -277,7 +236,7 @@ div.tocify {
   <a href="/consulting">Consulting</a>
 </li>
 <li>
-  <a href="#entropy-ai" onclick="ScrollToPos('#entropy-ai')">EQ AI</a>
+  <a href="entropy-eq.html">Entropy AI</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -298,21 +257,6 @@ div.tocify {
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div>
-<!--<div id="rStudioHeader" class="alwaysShrunk">
-  <div class="innards bandContent">
-    <div>
-      <a class="productName" href="index.html">Caura & Co.</a>
-    </div>
-
-    <div id="menu">
-      <div id="menuToggler"></div>
-      <div id="menuItems">
-        <a class="menuItem" href="https://s2blogs.com">Blog</a>
-        <a class="menuItem gitHubText" href="https://github.com/rstudio/rmarkdown">Source on GitHub</a>
-      </div>
-    </div>
-  </div>
-</div>-->
 
 <style type="text/css">
 #TOC {
@@ -334,6 +278,8 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 
 <h1 class="title toc-ignore">Data Consulting</h1>
+<h4 class="author"><em>Segah Meer</em></h4>
+<h4 class="date"><em>07/01/2016</em></h4>
 
 </div>
 
@@ -355,30 +301,7 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 </div>
 <div id="dnn-nlp" class="section level2">
 <h2>DNN, NLP</h2>
-<p>This is becoming a growing field for us. Please contact for further details. Also, see the product below.</p>
-<div id="entropy-ai" class="section level3">
-<h3>Entropy AI</h3>
-<p>Entropy gleans its insights from deep NLU (subtopic in NLP) analysis of written communication.</p>
-<p>Examples:</p>
-<ol style="list-style-type: decimal">
-<li></li>
-</ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">entropy:<span class="kw">analyze</span>(<span class="st">&#39;Hello, we are on a mission to change how consulting is done.&#39;</span>)</code></pre></div>
-<pre><code>## [1] &quot;Result&quot;        &quot;driven&quot;        &quot;Passive voice&quot; &quot;Concise&quot;      
-## [5] &quot;Informal&quot;      &quot;Thoughtful&quot;    &quot;Assertive&quot;</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li></li>
-</ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">entropy:<span class="kw">analyze</span>(<span class="st">&quot;Don&#39;t get us wrong, we love sales people. They are nice people. We like spending time with them. But we also belief that in consulting a direct connection with a technical member is key to a successful engagement.&quot;</span>)</code></pre></div>
-<pre><code>## [1] &quot;Positive&quot; &quot;Formal&quot;   &quot;Verbose&quot;</code></pre>
-There is a lot of recent research that contributed to this product. For the purpose of simplicity, recall the Maximum likelihood models from graduate school. At its core this is a variation, in a simplified form called <strong>Max Entropy</strong>:
-<center>
-<img src="https://user-images.githubusercontent.com/1756903/32816722-17b7e470-c96f-11e7-8225-9ee0e0882343.png" width="300">
-</center>
-<center>
-<a href="mailto:entropy@caura.co?subject=demo"><img src="entropy.gif" /></a>
-</center>
-</div>
+<p>This is becoming a growing field for us. Please contact for further details or see our <a href="/consulting/entropy-eq.html">partner product</a>.</p>
 </div>
 
 
