@@ -235,6 +235,33 @@ p {
   vertical-align: bottom;
 }
 
+.nav.navbar-nav.navbar-right .fa.fa-twitter.fa-lg {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  margin: 0px 0px 0px 10px;
+
+  background-image: url(../images/twitter.svg);
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  background-position: center center;
+
+  vertical-align: bottom;
+}
+.nav.navbar-nav.navbar-right .fa.fa-medium.fa-lg {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  margin: 0px 0px 0px 10px;
+
+  background-image: url(../images/medium.svg);
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  background-position: center center;
+
+  vertical-align: bottom;
+}
+
 #rStudioHeader #menu .menuItem.gitHubText {
   display: none;
 }
@@ -547,22 +574,6 @@ p {
   margin-right: 0px;
 }
 
-#rStudioFooter .bandContent .footerLogo.twitter {
-  background-image: url(../images/twitterLogo.svg);
-}
-
-#rStudioFooter .bandContent .footerLogo.gitHub {
-  background-image: url(../images/gitHubLogo2.svg);
-}
-
-#rStudioFooter .bandContent .footerLogo.linkedIn {
-  background-image: url(../images/linkedInLogo.svg);
-}
-
-#rStudioFooter .bandContent .footerLogo.facebook {
-  background-image: url(../images/facebookLogo.svg);
-}
-
 .screenshot {
   border: 1px solid #ccc;
 }
@@ -869,6 +880,8 @@ iframe.scale65 {
 }
 .toc-content { padding-bottom: 120px; }
 .nav.navbar-nav.navbar-right .fa.fa-github.fa-lg {display: inline-block;margin-left: 0;}
+.nav.navbar-nav.navbar-right .fa.fa-twitter.fa-lg {display: inline-block;margin-left: 0;}
+.nav.navbar-nav.navbar-right .fa.fa-medium.fa-lg {display: inline-block;margin-left: 0;}
 #rStudioFooter { height: auto; }
 #rStudioFooter.band {background-color: #75aadb;padding:0;color: #fff;font-weight: 300;font-size: 12px;line-height: 35px;position: fixed;left: 0;
 right: 0;text-align: center;bottom: 0;}
@@ -879,11 +892,11 @@ right: 0;text-align: center;bottom: 0;}
 .navbar-inverse .navbar-nav>li>a{color: #4F4F4F; font-size:14px;}
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background: #384053; color: #fff; }
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus { color: #384053; }
-.navbar-inverse .navbar-nav>li>a:hover .fa.fa-github.fa-lg { background-image: url(../images/gitHubLogo-hover.svg)  }
+.navbar-inverse .navbar-nav>li>a:hover .fa.fa-github.fa-lg { background-image: url(../images/icon-hover.svg)  }
 div.tocify { border-radius: 0px; }
 .tocify .tocify-item a, .tocify .list-group-item { padding: 10px 5px; }
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { background: #384053; color: #fff; }
 .navbar-inverse .navbar-toggle .icon-bar {background: #384053;}
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus  {background: #384053;}
 .navbar-inverse .navbar-toggle:hover .icon-bar, .navbar-inverse .navbar-toggle:focus .icon-bar { background: #fff; }
-.tocify-extend-page { max-height: 0px;} 
+.tocify-extend-page { max-height: 0px;}

@@ -39,7 +39,6 @@ At many companies the above no longer is feasible. We can help with long-term pr
 This is becoming a growing field for us. Please contact for further details. Also, see the product below.
 
 ### Entropy AI
-
 Entropy gleans its insights from deep NLU (subtopic in NLP) analysis of written communication.
 
 Examples:
@@ -64,5 +63,5 @@ c("Positive","Formal","Verbose")
 There is a lot of recent research that contributed to this product. For the purpose of simplicity, recall the Maximum likelihood models from graduate school. At its core this is a variation, in a simplified form called **Max Entropy**:
 <center><img src="https://user-images.githubusercontent.com/1756903/32816722-17b7e470-c96f-11e7-8225-9ee0e0882343.png" width="300"></center>
 
+<center>[![](entropy.gif)](mailto:entropy@caura.co?subject=demo)</center>
 
-<center><b>Try It: </b>[![](entropy.gif)](https://github.com/caura/entropy-ai-bot)</center>
