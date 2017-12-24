@@ -21,8 +21,7 @@ languageML('Hello, we are on a mission to change written communication.')
 ```
 
 ```r
-## [1] "Result"        "driven"        "Passive voice" "Concise"
-## [5] "Informal"      "Thoughtful"    "Assertive"
+## [1] "Concise"        "Informal"        "Receptive" "Positive"
 ```
 
 ```r
