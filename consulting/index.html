@@ -48,6 +48,9 @@
 <link rel="icon" type="image/png" href="../favicon.ico" />
 
 <script type="text/javascript" src="js/rmarkdown.js"></script>
+<link rel="stylesheet" href="css/entropy.css" type="text/css" />
+<!--<script type="text/javascript" scr="https://raw.githubusercontent.com/formio/ngFormio/develop/dist/formio-full.min.js"></script>-->
+<script type="text/javascript" src="https://rawgit.com/formio/ngFormio/develop/dist/formio-full.min.js"></script>
 
 
 
@@ -233,7 +236,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="/consulting">Consulting</a>
+  <a href="/consulting">Data Analytics</a>
 </li>
 <li>
   <a href="entropy-eq.html">Entropy AI</a>
@@ -286,12 +289,12 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 <p>We focus on high value-added data projects at rapidly growing technology companies.</p>
 <p>Our engagement process is very thorough It involves a deep conversation with a technical member of our staff. Sales people are not and will never be involved. To make sure that’s the case, we have a working EQ (i.e. Empathy IQ) engine for all written conversations. Yes, we are very serious about this “no-sales” commitment.</p>
-<p>Working with a Data Consultant is like seeing a doctor. The examination can either be critical or a simple "physical" to hear best practices. In either case, it might be tempting to seek out a tool specialist when you need one, but best results are achieved with a general practitioner. Collectively we are vendor/technology agnostic. We do have some vendor partnership for legacy reasons, but we are not afraid to make recommendations counter to these (and frequently do).</p>
+<p><strong>Inspecting one company’s data</strong> is like having a doctor ask the patient to take off his pants. It’s very revealing! While it might be tempting to seek out a tool specialist when you need one, best results are achieved with a general practitioner. Collectively we are vendor/technology agnostic. We do have some vendor partnership for legacy reasons, but we are not afraid to make recommendations counter to these (and frequently do).</p>
 <div id="analytics" class="section level2">
 <h2>Analytics</h2>
 <p>Google BigQuery is a <a href="https://cloud.google.com/partners/directory/#?q=caura#search">partner technology</a>. We have completed many BQ projects of different complexity (both in Legacy and StandardSQL).</p>
 <p>Some links: <a href="https://discourse.looker.com/t/developer-and-production-pdts-in-looker/3567">link1</a>, <a href="https://discourse.looker.com/t/bigquery-migrating-from-legacy-sql-to-standard-sql/3568">link2</a>, <a href="https://discourse.looker.com/t/incremental-pdts-on-bigquery-or-how-to-produce-daily-snapshots-on-scd-type-1-schemas/2666">link3</a>, <a href="https://stackoverflow.com/questions/35807572/bigquery-pivot-data-rows-columns/43711803#43711803">link4</a>, <a href="https://stackoverflow.com/questions/42151828/google-bigquery-taking-too-long-but-small-change">link5</a></p>
-<p>We also have a close relationship with Looker. This <a href="https://segah.me/post/why-did-i-become-a-data-consultant-and-a-looker-partner/">post</a> from 2016 might be helpful.</p>
+<p>We also have a close relationship with Looker. This <a href="https://segah.me/post/why-did-i-become-a-data-consultant-and-a-looker-partner/">post</a> from 2016 might be helpful. On the list of topics: visit <a href="https://discourse.looker.com/users/segahm/activity/topics">this Looker Discourse page</a>.</p>
 <p>R is our favorite tool. We like using R in almost all projects. We even pushed it into <a href="https://looker.com/blog/predict-lending-clubs-loan-portfolio-returns-using-hp-vertica-looker-and-distributed-r">corporate thinking</a>.</p>
 </div>
 <div id="data-warehousing" class="section level2">
@@ -343,7 +346,12 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 -->
-<script>
+<script type='text/javascript'>//<![CDATA[
+
+var app = angular.module('formApp', ['formio']);
+
+//]]>
+
     function ScrollToPos(target,act){
 
           if(target == "#"){

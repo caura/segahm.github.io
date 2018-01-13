@@ -1,0 +1,48 @@
+.col .span8 {
+  background-color: rgb(235, 236, 228);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: rgb(79, 79, 79);
+  display: block;
+  float: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 329px;
+  line-height: 20px;
+  margin-left: 20px;
+  min-height: 300px;
+  min-width: 800px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  text-size-adjust: 100%;
+  width: 800px;
+}
+
+.container {
+  color: rgb(79, 79, 79);
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 30px;
+  line-height: 20px;
+  margin-left: 0px;
+  margin-right: -140px;
+  text-size-adjust: 100%;
+  width: 940px;
+}
+
+.row {
+  color: rgb(79, 79, 79);
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 51px;
+  line-height: 20px;
+  margin-left: -20px;
+  text-size-adjust: 100%;
+  width: 960px;
+}
