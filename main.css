@@ -17,6 +17,9 @@
     transition: width .2s linear,height .2s linear;
     display: inline-block;
 }
+.keyvisual-cta-2 {
+    background: rgba(255, 255, 255, 0.5) url(stuff/bg-strip.png) repeat scroll 0 0;
+}
 .keyvisual-welcome-layer {
     position: absolute;
     top: 1.625rem;
@@ -37,6 +40,12 @@
     padding-left: 1.375rem;
     text-align: center;
     color: #77919f;
+}
+.keyvisual-cta-layer-content-alternative {
+    text-align: center;
+    color: #77919f;
+    margin: 0 auto; /* or margin: 0 auto 0 auto */
+    position:relative;
 }
 
 @media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
