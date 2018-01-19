@@ -1,6 +1,7 @@
 output_dir: '.'
 output:
   html_document:
+    md_extensions: -markdown_in_html_blocks
     theme: cosmo
     highlight: textmate
     mathjax: null

@@ -11,9 +11,9 @@
 
 <meta name="author" content="Zhenya &amp; Segah" />
 
-<meta name="date" content="2017-12-20" />
+<meta name="date" content="2018-01-18" />
 
-<title>Entropy EQ - Caura & Co.</title>
+<title>Entropy EQ</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -47,10 +47,6 @@
 <link rel="icon" type="image/png" href="../favicon.ico" />
 
 <script type="text/javascript" src="js/rmarkdown.js"></script>
-<!--
-<link rel="stylesheet" href="css/entropy.css" type="text/css" />
-<script type="text/javascript" scr="https://raw.githubusercontent.com/formio/ngFormio/develop/dist/formio-full.min.js"></script>
-<script type="text/javascript" src="https://rawgit.com/formio/ngFormio/develop/dist/formio-full.min.js"></script>-->
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -159,7 +155,7 @@ $(document).ready(function () {
   <a href="/consulting">Data Analytics</a>
 </li>
 <li>
-  <a href="entropy-eq.html">Entropy AI</a>
+  <a href="/consulting/entropy-eq.html">Entropy AI</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -202,18 +198,31 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 <h1 class="title toc-ignore">Entropy EQ</h1>
 <h4 class="author"><em>Zhenya &amp; Segah</em></h4>
-<h4 class="date"><em>12/20/2017</em></h4>
+<h4 class="date"><em>01/18/2018</em></h4>
 
 </div>
 
 
 <p>Entropy gleans its insights from deep NLU (subtopic in NLP) analysis of written communication.</p>
-In its simplified form, this is an expanded version of Maximum likelihood model called Max Entropy:<br/>
-<center>
-<img width="300" src="https://user-images.githubusercontent.com/1756903/32816722-17b7e470-c96f-11e7-8225-9ee0e0882343.png">
-</center>
-<div id="r-examples" class="section level2">
-<h2>R Examples:</h2>
+<p>In its simplified form, this is an expanded version of Maximum likelihood model called Max Entropy:<br/> <center><img width="300" src="https://user-images.githubusercontent.com/1756903/32816722-17b7e470-c96f-11e7-8225-9ee0e0882343.png"></center></p>
+<div id="examples" class="section level2">
+<h2>Examples</h2>
+<div style="display:inline-block;">
+<div style="padding-right:10px;float:left;width: 400px">
+<p><img src="https://www.evernote.com/l/AcDx9HyAXWpGn4eVrtdpEMPct81Dd0rU1tcB/image.png"></p>
+</div>
+<div style="float:left;width: 400px">
+<p><img src="https://www.evernote.com/l/AcBHDsoX0PtNFLTX0xpEVVlI9uoRiSC3YdMB/image.png"></p>
+</div>
+</div>
+</div>
+<div id="try-me" class="section level2">
+<h2>Try Me</h2>
+<iframe src="https://app.entropy.ai/caura/writing" width="800px" height="400px" style="border:none;" tabindex="-1" title="empty" aria-hidden="true">
+</iframe>
+</div>
+<div id="api-examples" class="section level2">
+<h2>API Examples:</h2>
 <pre class="r"><code>library(entropy)
 languageML(&#39;Hello, we are on a mission to change written communication.&#39;)</code></pre>
 <pre class="r"><code>## [1] &quot;Concise&quot;        &quot;Informal&quot;        &quot;Receptive&quot; &quot;Positive&quot;</code></pre>
@@ -223,32 +232,11 @@ languageML(&#39;Hello, we are on a mission to change written communication.&#39;
 <div id="architecture" class="section level2">
 <h2>Architecture</h2>
 <p><img width="700" src="images/entropy architecture.svg"></p>
-</div>
-<div id="demo" class="section level2">
-<h2>Demo</h2>
-<p>send an email to <a href="mailto:entropy@caura.co">entropy@caura.co</a></p>
 <blockquote>
 <p>Places where linguists traditionally look to see [entropy] are not where the fundamentals of language are.</p>
 <p>– <cite>Marcelo A. Montemurro and Damián H. Zanette</cite></p>
 </blockquote>
-</div>
-
-
-
-
-  </div> <!-- articleBandContent -->
-</div> <!-- pageContent -->
-
-<div id="rStudioFooter" class="band full">
-<div class="bandContent">
-  <div id="copyright">&copy; Copyright 2017 Caura & Co.</div>
-  <div id="logos">
-  </div>
-</div>
-</div>
-
 <!-- disqus -->
-<!--
  <div id="disqus_thread" class="standardPadding"></div>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -271,7 +259,22 @@ languageML(&#39;Hello, we are on a mission to change written communication.&#39;
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
--->
+</div>
+
+
+
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<div id="rStudioFooter" class="band full">
+<div class="bandContent">
+  <div id="copyright">&copy; Copyright 2017 Caura & Co.</div>
+  <div id="logos">
+  </div>
+</div>
+</div>
+
 <script type='text/javascript'>
 
     function ScrollToPos(target,act){

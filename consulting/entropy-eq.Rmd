@@ -1,7 +1,7 @@
 ---
 title: "Entropy EQ"
 author: "Zhenya & Segah"
-date: "12/20/2017"
+date: "01/18/2018"
 output: html_document
 ---
 
@@ -14,7 +14,24 @@ Entropy gleans its insights from deep NLU (subtopic in NLP) analysis of written 
 In its simplified form, this is an expanded version of Maximum likelihood model called Max Entropy:<br/>
 <center><img width="300" src="https://user-images.githubusercontent.com/1756903/32816722-17b7e470-c96f-11e7-8225-9ee0e0882343.png"></center>
 
-## R Examples:
+## Examples
+
+<div style="display:inline-block;">
+<div style="padding-right:10px;float:left;width: 400px">
+<img src="https://www.evernote.com/l/AcDx9HyAXWpGn4eVrtdpEMPct81Dd0rU1tcB/image.png">
+</div>
+<div style="float:left;width: 400px">
+<img src="https://www.evernote.com/l/AcBHDsoX0PtNFLTX0xpEVVlI9uoRiSC3YdMB/image.png">
+</div>
+</div>
+
+## Try Me
+
+<iframe src="https://app.entropy.ai/caura/writing" width="800px" height="400px" style="border:none;" tabindex="-1" title="empty" aria-hidden="true">
+</iframe>
+
+## API Examples:
+
 ```r
 library(entropy)
 languageML('Hello, we are on a mission to change written communication.')
@@ -36,14 +53,11 @@ languageML("Don't get us wrong, we love existing tools such as Gmail and Slack. 
 
 <img width="700" src="images/entropy architecture.svg">
 
-## Demo
-
-Please reach out to us: [entropy@caura.co](mailto:entropy@caura.co)
-<center>[![](entropy.gif)](mailto:entropy@caura.co?subject=demo)</center>
-
-<br>
-<br>
 
 > Places where linguists traditionally look to see [entropy] are not where the fundamentals of language are.
 >
 > -- <cite>Marcelo A. Montemurro and Damián H. Zanette</cite>
+
+```{r, echo=FALSE}
+htmltools::includeHTML("disqus.html")
+```

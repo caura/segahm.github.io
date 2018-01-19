@@ -1,5 +1,5 @@
 ---
-title: "Data Consulting"
+title: "Data Analytics"
 author: "Segah Meer"
 date: "07/01/2016"
 output:
