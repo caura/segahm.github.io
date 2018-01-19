@@ -21,6 +21,8 @@ It extracts the following Emotional IQ signals from text:
 * Informal
 * Passive Voice
 * Runon
+* Profane
+* Aggressive
 * Concise
 * and, as a surprise, a few others...
 
