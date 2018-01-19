@@ -15,7 +15,7 @@ It extracts the following Emotional IQ signals from text:
 
 * Positive
 * Negative
-* Emotionaly Charged
+* Emotionally Charged
 * Verbose
 * Unsure
 * Informal
