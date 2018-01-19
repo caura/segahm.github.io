@@ -11,8 +11,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Entropy gleans its insights from deep NLU (subtopic in NLP) analysis of written communication.
 
-In its simplified form, this is an expanded version of Maximum likelihood model called Max Entropy:<br/>
-<center><img width="300" src="https://user-images.githubusercontent.com/1756903/32816722-17b7e470-c96f-11e7-8225-9ee0e0882343.png"></center>
+It extracts the following Emotional IQ signals from text:
+
+* Positive
+* Negative
+* Emotionaly Charged
+* Verbose
+* Unsure
+* Informal
+* Passive Voice
+* Runon
+* Concise
+* and, as a surprise, a few others...
+
 
 ## Examples
 
