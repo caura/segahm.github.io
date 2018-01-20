@@ -40,7 +40,7 @@ It extracts the following Emotional IQ signals from text:
 
 ## Try Me
 
-<iframe src="https://app.entropy.ai/caura/writing" width="800px" height="400px" style="border:none;" tabindex="-1" title="empty" aria-hidden="true">
+<iframe scrolling="no" src="https://app.entropy.ai/caura/writing" width="800px" height="400px" style="border:none;" tabindex="-1" title="empty" aria-hidden="true">
 </iframe>
 
 ## API Examples:
