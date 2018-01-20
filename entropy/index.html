@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Zhenya &amp; Segah" />
+
+<meta name="date" content="2018-01-18" />
+
+<title>Entropy EQ</title>
+
+<script src="../consulting/site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="../consulting/site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="../consulting/site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="../consulting/site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="../consulting/site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="../consulting/site_libs/navigation-1.1/tabsets.js"></script>
+<link href="../consulting/site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="../consulting/site_libs/highlightjs-9.12.0/highlight.js"></script>
+<!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-KVNKCR4');
+        </script>
+        <!-- End Google Tag Manager -->
+<meta name="description" content="We focus on high value-added data projects at rapidly growing technology companies... Working with a Data Consultant is like seeing a doctor." />
+
+<link rel="icon" type="image/png" href="../favicon.ico" />
+
+<script type="text/javascript" src="../consulting/js/rmarkdown.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Caura & Co.</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="/consulting">Data Analytics</a>
+</li>
+<li>
+  <a href="/consulting/entropy-eq.html">Entropy AI</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+                <li>
+  <a href="https://www.quora.com/profile/Caura">KB</a>
+  </li>
+  <li>
+  <a href="https://github.com/caura">
+    <span class="fa fa-github fa-lg"></span>
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/caurandco">
+    <span class="fa fa-twitter fa-lg"></span>
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div>
+
+<style type="text/css">
+#TOC {
+  margin-left: 35px;
+  margin-top: 90px;
+}
+</style>
+
+<script type="text/javascript">
+$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+</script>
+
+
+<div id="pageContent" class="standardPadding">
+  <div class="articleBandContent">
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Entropy EQ</h1>
+<h4 class="author"><em>Zhenya &amp; Segah</em></h4>
+<h4 class="date"><em>01/18/2018</em></h4>
+
+</div>
+
+
+<p>Entropy gleans its insights from deep NLU (subtopic in NLP) analysis of written communication.</p>
+<p>It extracts the following Emotional IQ signals from text:</p>
+<ul>
+<li>Positive</li>
+<li>Negative</li>
+<li>Emotionally Charged</li>
+<li>Verbose</li>
+<li>Unsure</li>
+<li>Informal</li>
+<li>Passive Voice</li>
+<li>Runon</li>
+<li>Profane</li>
+<li>Aggressive</li>
+<li>Concise</li>
+<li>and, as a surprise, a few others…</li>
+</ul>
+<div id="examples" class="section level2">
+<h2>Examples</h2>
+<div style="display:inline-block;">
+<div style="padding-right:10px;float:left;width: 400px">
+<p><img src="https://www.evernote.com/l/AcDx9HyAXWpGn4eVrtdpEMPct81Dd0rU1tcB/image.png"></p>
+</div>
+<div style="float:left;width: 400px">
+<p><img src="https://www.evernote.com/l/AcBHDsoX0PtNFLTX0xpEVVlI9uoRiSC3YdMB/image.png"></p>
+</div>
+</div>
+</div>
+<div id="try-me" class="section level2">
+<h2>Try Me</h2>
+<iframe scrolling="no" src="https://app.entropy.ai/caura/writing" width="800px" height="400px" style="border:none;" tabindex="-1" title="empty" aria-hidden="true">
+</iframe>
+</div>
+<div id="api-examples" class="section level2">
+<h2>API Examples:</h2>
+<pre class="r"><code>library(entropy)
+languageML(&#39;Hello, we are on a mission to change written communication.&#39;)</code></pre>
+<pre class="r"><code>## [1] &quot;Concise&quot;        &quot;Informal&quot;        &quot;Receptive&quot; &quot;Positive&quot;</code></pre>
+<pre class="r"><code>languageML(&quot;Don&#39;t get us wrong, we love existing tools such as Gmail and Slack. Yet, we believe that our communication is poor (Emojis - come on...). We are capable of much more!&quot;)</code></pre>
+<pre class="r"><code>## [1] &quot;Thoughtful&quot; &quot;Informal&quot;   &quot;Verbose&quot;</code></pre>
+</div>
+<div id="architecture" class="section level2">
+<h2>Architecture</h2>
+<p><img width="700" src="images/entropy architecture.svg"></p>
+<blockquote>
+<p>Places where linguists traditionally look to see [entropy] are not where the fundamentals of language are.</p>
+<p>– <cite>Marcelo A. Montemurro and Damián H. Zanette</cite></p>
+</blockquote>
+<!-- disqus -->
+ <div id="disqus_thread" class="standardPadding"></div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var disqus_shortname = 'caura'; // required: replace example with your forum shortname
+
+        (function() {
+            // create disqus script tag
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+            // determine container
+            var container = document.getElementsByTagName('body')[0] || document.getElementsByTagName('head')[0];
+
+            // append script tag enclosed by google indexing suppression comment
+            container.appendChild(document.createComment('googleoff: all'));
+            container.appendChild(dsq);
+            container.appendChild(document.createComment('googleon: all'));
+        })();
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<div id="rStudioFooter" class="band full">
+<div class="bandContent">
+  <div id="copyright">&copy; Copyright 2017 Caura & Co.</div>
+  <div id="logos">
+  </div>
+</div>
+</div>
+
+<script type='text/javascript'>
+
+    function ScrollToPos(target,act){
+
+          if(target == "#"){
+
+             $('html,body').animate({ scrollTop: 0 }, 1000);
+
+            }else{
+
+             $('html,body').animate({ scrollTop: $(target).offset().top }, 1000);
+
+          }
+
+         }
+</script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>
