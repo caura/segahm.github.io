@@ -201,7 +201,14 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <h4 class="date"><em>01/18/2018</em></h4>
 
 </div>
-
+<blockquote>
+<p>"Places where linguists traditionally look to see [entropy] are not where the fundamentals of language are."</p>
+<p>– <cite>Marcelo A. Montemurro and Damián H. Zanette</cite></p>
+</blockquote>
+<div id="try-me" class="section level2">
+<iframe scrolling="no" src="https://app.entropy.ai/caura/writing" width="800px" height="400px" style="border:none;" tabindex="-1" title="empty" aria-hidden="true">
+</iframe>
+</div>
 
 <p>Entropy gleans its insights from deep NLU (subtopic in NLP) analysis of written communication.</p>
 <p>It extracts the following Emotional IQ signals from text:</p>
@@ -230,26 +237,11 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 </div>
 </div>
 </div>
-<div id="try-me" class="section level2">
-<h2>Try Me</h2>
-<iframe scrolling="no" src="https://app.entropy.ai/caura/writing" width="800px" height="400px" style="border:none;" tabindex="-1" title="empty" aria-hidden="true">
-</iframe>
+<div>
+<h2>Implementation</h2>
+We are still experimenting with this. Please visit our github resource:
+<a href="https://github.com/caura/entropy-eq-api/">https://github.com/caura/entropy-eq-api/</a> and contact us with questions or suggestions below
 </div>
-<div id="api-examples" class="section level2">
-<h2>API Examples:</h2>
-<pre class="r"><code>library(entropy)
-languageML(&#39;Hello, we are on a mission to change written communication.&#39;)</code></pre>
-<pre class="r"><code>## [1] &quot;Concise&quot;        &quot;Informal&quot;        &quot;Receptive&quot; &quot;Positive&quot;</code></pre>
-<pre class="r"><code>languageML(&quot;Don&#39;t get us wrong, we love existing tools such as Gmail and Slack. Yet, we believe that our communication is poor (Emojis - come on...). We are capable of much more!&quot;)</code></pre>
-<pre class="r"><code>## [1] &quot;Thoughtful&quot; &quot;Informal&quot;   &quot;Verbose&quot;</code></pre>
-</div>
-<div id="architecture" class="section level2">
-<h2>Architecture</h2>
-<p><img width="700" src="../consulting/images/entropy architecture.svg"></p>
-<blockquote>
-<p>Places where linguists traditionally look to see [entropy] are not where the fundamentals of language are.</p>
-<p>– <cite>Marcelo A. Montemurro and Damián H. Zanette</cite></p>
-</blockquote>
 <!-- disqus -->
  <div id="disqus_thread" class="standardPadding"></div>
     <script type="text/javascript">
