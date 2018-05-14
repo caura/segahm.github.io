@@ -18,7 +18,7 @@
     display: inline-block;
 }
 .keyvisual-cta-2 {
-    background: rgba(255, 255, 255, 0.5) url(stuff/bg-strip.png) repeat scroll 0 0;
+    background: #9acd32 url(stuff/bg-strip.png) repeat scroll 0 0;
 }
 .keyvisual-welcome-layer {
     position: absolute;
