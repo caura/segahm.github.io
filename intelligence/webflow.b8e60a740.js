@@ -1252,7 +1252,7 @@
     var api = {};
 
     // Cross-Domain AJAX for IE8
-    
+
 
     var $doc = $(document);
     var $forms;
@@ -4385,10 +4385,8 @@ Webflow.require('ix').init([
   {"slug":"hover-interaction","name":"Hover Interaction","value":{"style":{},"triggers":[{"type":"hover","stepsA":[],"stepsB":[]}]}},
   {"slug":"zhenya-bio-popup","name":"Zhenya Bio Popup","value":{"style":{},"triggers":[{"type":"click","selector":".zhenya-bio-wrapper","preserve3d":true,"stepsA":[{"display":"block"},{"opacity":1,"transition":"opacity 200 ease 0, transform 200 ease 0","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
   {"slug":"close-zhenya-bio-wrapper","name":"Close Zhenya Bio Wrapper","value":{"style":{},"triggers":[{"type":"click","selector":".zhenya-bio-wrapper","preserve3d":true,"stepsA":[{"opacity":0,"transition":"transform 200 ease 0, opacity 200 ease 0","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"display":"none"}],"stepsB":[]}]}},
-  {"slug":"alex-bio-popup","name":"Alex Bio Popup","value":{"style":{},"triggers":[{"type":"click","selector":".alex-bio-wrapper","preserve3d":true,"stepsA":[{"display":"block"},{"opacity":1,"transition":"opacity 200 ease 0, transform 200 ease 0","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"close-alex-bio-wrapper","name":"Close Alex Bio Wrapper","value":{"style":{},"triggers":[{"type":"click","selector":".alex-bio-wrapper","preserve3d":true,"stepsA":[{"opacity":0,"transition":"transform 200 ease 0, opacity 200 ease 0","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"display":"none"}],"stepsB":[]}]}},
-  {"slug":"close-ilias-bio-wrapper","name":"Close Ilias Bio Wrapper","value":{"style":{},"triggers":[{"type":"click","selector":".ilias-bio-wrapper","preserve3d":true,"stepsA":[{"opacity":0,"transition":"opacity 200 ease 0, transform 200 ease 0","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"display":"none"}],"stepsB":[]}]}},
-  {"slug":"ilias-bio-popup","name":"Ilias Bio Popup","value":{"style":{},"triggers":[{"type":"click","selector":".ilias-bio-wrapper","preserve3d":true,"stepsA":[{"display":"block"},{"opacity":1,"transition":"opacity 200 ease 0, transform 200 ease 0","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+   {"slug":"segah-bio-popup","name":"Segah Bio Popup","value":{"style":{},"triggers":[{"type":"click","selector":".segah-bio-wrapper","preserve3d":true,"stepsA":[{"display":"block"},{"opacity":1,"transition":"opacity 200 ease 0, transform 200 ease 0","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"close-segah-bio-wrapper","name":"Close Segah Bio Wrapper","value":{"style":{},"triggers":[{"type":"click","selector":".segah-bio-wrapper","preserve3d":true,"stepsA":[{"opacity":0,"transition":"transform 200 ease 0, opacity 200 ease 0","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"display":"none"}],"stepsB":[]}]}},
   {"slug":"zhenya-bio-cta","name":"Zhenya Bio CTA","value":{"style":{},"triggers":[{"type":"hover","stepsA":[{"transition":"transform 200 ease 0","x":"0px","y":"0px","z":"0px"}],"stepsB":[]}]}}
 ]);
 
