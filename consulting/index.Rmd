@@ -1,6 +1,6 @@
 ---
 title: "Data Analytics"
-author: "Segah Mir"
+author: "Caura & Co. Team"
 date: "07/01/2016"
 output:
   html_document:
