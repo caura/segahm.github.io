@@ -15,25 +15,53 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 We focus on high value-added data projects at rapidly growing technology companies.
 
-Our engagement process is very thorough It involves a deep conversation with a technical member of our staff. Sales people are not and will never be involved. To make sure that's the case, we have a working EQ (i.e. Empathy IQ) engine for all written conversations. Yes, we are very serious about this "no-sales" commitment.
+## Data Analytics
 
-## Analytics
+* Report, dashboard and KPI design and delivery.
+* Data model and schema design and evolution.
+* Implement and roll out single customer view (360 degree view of the customer)
+* Use data to solve specific problems: e.g. optimize marketing spend across channels, increase customer retention.
+Training in how to use various technologies
 
-Google BigQuery is a [partner technology](https://cloud.google.com/partners/directory/#?q=caura#search). We have completed many BQ projects of different complexity (both in Legacy and StandardSQL).
+### Training
 
-Some links:
-<a href="https://discourse.looker.com/t/developer-and-production-pdts-in-looker/3567">link1</a>, <a href="https://discourse.looker.com/t/bigquery-migrating-from-legacy-sql-to-standard-sql/3568">link2</a>, <a href="https://discourse.looker.com/t/incremental-pdts-on-bigquery-or-how-to-produce-daily-snapshots-on-scd-type-1-schemas/2666">link3</a>, <a href="https://stackoverflow.com/questions/35807572/bigquery-pivot-data-rows-columns/43711803#43711803">link4</a>, <a href="https://stackoverflow.com/questions/42151828/google-bigquery-taking-too-long-but-small-change">link5</a>
+Workshops and training sessions to upskill your team in using digital various data technologies to answer business questions.
 
-We also have a close relationship with Looker. This [post](https://segah.me/post/why-did-i-become-a-data-consultant-and-a-looker-partner/) from 2016 might be helpful. On the list of topics: visit [this Looker Discourse page](https://discourse.looker.com/users/segahm/activity/topics).
+### Solve specific business 
 
-R is our favorite tool. We like using R in almost all projects. We even pushed it into  [corporate thinking](https://looker.com/blog/predict-lending-clubs-loan-portfolio-returns-using-hp-vertica-looker-and-distributed-r).
+Work with our team to use data to answer specific business questions (Scoped projects).
 
-## Data Warehousing
+### Report and dashboard design and delivery
 
-When strong data governance is in place, we can help make proactive recommendations using [traditional approach](https://discourse.looker.com/t/designing-a-data-warehouse-what-would-a-bi-solution-recommend/1231/5) and helping you put plans into place to maintain the architecture [post-deployment](https://discourse.looker.com/t/optimize-query-performance-with-lookml-a-case-study/1219).
+Design, build and roll out reporting solutions on top of your data.
 
-At many companies the above no longer is feasible. We can help with long-term process and plan to monitor performance objectives against analytical needs.
+### Predictive model design and delivery
 
-## DNN, NLP
+Have our team build predictive models including attribution, customer lifetime value and churn, on top of your data.
 
-This is becoming a growing field for us. Please contact for further details or see our [partner product](/entropy).
+### Data model design and delivery
+
+Building data models is a key step in building a use case for a data culture. We can help you with that.
+
+### Support Contract
+
+Have direct access to our Analytics Team as questions arise, on an ongoing basis.
+
+## Data Engineering
+
+* Design, build and run real-time data processing applications e.g. dashboards, personalization engines
+* Extend existing technology stack with support for tracking new platforms, new enrichments and new storage targets.
+* Training and support contracts to help you effectively deploy and various open source technology
+
+
+### Real-time application design and build
+
+Design, build, roll out and run data-driven applications on top of your real-time event stream.
+
+### Extend the tech stack
+
+Build out support for tracking in new platforms, new enrichments and new storage targets.
+
+### Support Contract
+
+Support your data engineering and devops teams setup and run open source technology.

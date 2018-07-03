@@ -1,5 +1,5 @@
 ---
-title: "technologies"
+title: "Tech"
 author: "Caura & Co. Team"
 date: "July 3, 2017"
 output: html_document
@@ -11,7 +11,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Data Warehousing
 
+Redshift, Google BigQuery ([partner](https://cloud.google.com/partners/directory/#?q=caura#search)), Snowflake, HP Vertica
+
 ## Business Intelligence
 
+Looker ([partner](https://medium.com/@cauraco/looker-google-bigquery-partnerships-9ecf2412a877)), Tableau, Microstrategy, Periscope Data
+
 ## ETL
+
+Fivetran, Stitch, AWS Data Pipelines, Airflow, Luigi
+
+## Stats
+
+R, Gauss, Stata
+
 

@@ -1,19 +1,80 @@
 ---
 title: "Customers"
 author: "Caura & Co. Team"
-date: "July 3, 2017"
-output: html_document
+date: "June 1, 2018"
+output:
+  html_document:
+    highlight: tango
+    toc: true
+    toc_float:
+      collapsed: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Analytics
+## By Function
 
-## Data Engineerin
+### Analytics
 
-## Business Intelligence
+Procore, TransferWise, AbilTo, Leadnomics, StumbleUpon ZestFinance
 
-## Data Science
+### Data Engineering
+
+Earnest, RealSelf, RelayNetwork
+
+### Business Intelligence
+
+Docker, Strava, RealSelf, LaunchPotato, Craftsy, Credit Sesame, FinanceIt, Glide, Home Stars, M. Gemi, Payoff, Shift, ShipHawk, Vouch, Aisle411
+
+### Data Science
+
+Duetto Research, Leadnomics
+
+## By Team
+
+### Marketing
+
+Strava, 
+
+### Product
+
+Earnest, RelayNetwork, Docker
+
+### Analytics
+
+ZestFinance, TransferWise, StumbleUpon, RealSelf, Craftsy, Glide
+
+### Operations
+
+AbilTo, Leadnomics
+
+### Finance
+
+Procore, LaunchPotato, FinanceIt
+
+## By Industry
+
+### Two-sided Marketplaces
+
+### E-commerce
+
+Craftsy
+
+### Retail
+
+Aisle411, M. Gemi, ShipHawk
+
+### Health
+
+Abilto, RealSelf, Strava
+
+### SaaS
+
+RealSelf, Looker
+
+### FinTech
+
+Earnest, TransferWise, FinanceIt, Vouch, ZestFinance
 

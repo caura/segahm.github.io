@@ -20,9 +20,10 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <!-- Google Tag Manager -->
         <script>
             (function(w, d, s, l, i) {
@@ -47,21 +48,6 @@
 
 <script type="text/javascript" src="js/rmarkdown.js"></script>
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
 
 
 
@@ -136,6 +122,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
@@ -200,22 +281,78 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 <h1 class="title toc-ignore">Customers</h1>
 <h4 class="author"><em>Caura &amp; Co. Team</em></h4>
-<h4 class="date"><em>July 3, 2017</em></h4>
+<h4 class="date"><em>June 1, 2018</em></h4>
 
 </div>
 
 
-<div id="analytics" class="section level2">
-<h2>Analytics</h2>
+<div id="by-function" class="section level2">
+<h2>By Function</h2>
+<div id="analytics" class="section level3">
+<h3>Analytics</h3>
+<p>Procore, TransferWise, AbilTo, Leadnomics, StumbleUpon ZestFinance</p>
 </div>
-<div id="data-engineerin" class="section level2">
-<h2>Data Engineerin</h2>
+<div id="data-engineering" class="section level3">
+<h3>Data Engineering</h3>
+<p>Earnest, RealSelf, RelayNetwork</p>
 </div>
-<div id="business-intelligence" class="section level2">
-<h2>Business Intelligence</h2>
+<div id="business-intelligence" class="section level3">
+<h3>Business Intelligence</h3>
+<p>Docker, Strava, RealSelf, LaunchPotato, Craftsy, Credit Sesame, FinanceIt, Glide, Home Stars, M. Gemi, Payoff, Shift, ShipHawk, Vouch, Aisle411</p>
 </div>
-<div id="data-science" class="section level2">
-<h2>Data Science</h2>
+<div id="data-science" class="section level3">
+<h3>Data Science</h3>
+<p>Duetto Research, Leadnomics</p>
+</div>
+</div>
+<div id="by-team" class="section level2">
+<h2>By Team</h2>
+<div id="marketing" class="section level3">
+<h3>Marketing</h3>
+<p>Strava,</p>
+</div>
+<div id="product" class="section level3">
+<h3>Product</h3>
+<p>Earnest, RelayNetwork, Docker</p>
+</div>
+<div id="analytics-1" class="section level3">
+<h3>Analytics</h3>
+<p>ZestFinance, TransferWise, StumbleUpon, RealSelf, Craftsy, Glide</p>
+</div>
+<div id="operations" class="section level3">
+<h3>Operations</h3>
+<p>AbilTo, Leadnomics</p>
+</div>
+<div id="finance" class="section level3">
+<h3>Finance</h3>
+<p>Procore, LaunchPotato, FinanceIt</p>
+</div>
+</div>
+<div id="by-industry" class="section level2">
+<h2>By Industry</h2>
+<div id="two-sided-marketplaces" class="section level3">
+<h3>Two-sided Marketplaces</h3>
+</div>
+<div id="e-commerce" class="section level3">
+<h3>E-commerce</h3>
+<p>Craftsy</p>
+</div>
+<div id="retail" class="section level3">
+<h3>Retail</h3>
+<p>Aisle411, M. Gemi, ShipHawk</p>
+</div>
+<div id="health" class="section level3">
+<h3>Health</h3>
+<p>Abilto, RealSelf, Strava</p>
+</div>
+<div id="saas" class="section level3">
+<h3>SaaS</h3>
+<p>RealSelf, Looker</p>
+</div>
+<div id="fintech" class="section level3">
+<h3>FinTech</h3>
+<p>Earnest, TransferWise, FinanceIt, Vouch, ZestFinance</p>
+</div>
 </div>
 
 
@@ -250,6 +387,8 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 </script>
 
 
+</div>
+</div>
 
 </div>
 
