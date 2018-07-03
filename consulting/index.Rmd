@@ -1,6 +1,6 @@
 ---
 title: "Data Analytics"
-author: "Segah Meer"
+author: "Segah Mir"
 date: "07/01/2016"
 output:
   html_document:
