@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Data Warehousing
 
-Redshift, Google BigQuery ([partner](https://cloud.google.com/partners/directory/#?q=caura#search)), Snowflake, HP Vertica
+Redshift, Google BigQuery ([partner](https://cloud.withgoogle.com/partners/detail/?id=CIGAgICAgIDlOA%3D%3D&language=en)), Snowflake, HP Vertica
 
 ## Business Intelligence
 
