@@ -19,7 +19,7 @@ Looker ([partner](https://medium.com/@cauraco/looker-google-bigquery-partnership
 
 ## ETL
 
-Fivetran, Stitch, AWS Data Pipelines, Airflow, Luigi
+Fivetran, Alooma, Stitch, AWS Data Pipelines, Airflow, Luigi
 
 ## Stats
 
