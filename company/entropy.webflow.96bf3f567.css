@@ -45,9 +45,18 @@ img {
 .nav-menu {
   margin-top: 0px;
   margin-left: 20px;
-  padding-top: 20px;
+  /*padding-top: 20px;*/
   padding-bottom: 14px;
   float: right;
+}
+nav.nav-menu2.w-nav-menu2 {
+    margin-top: 0px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    float: left;
+    position: relative;
+    float: left;
 }
 
 .nav-item {
@@ -867,6 +876,7 @@ img {
   position: static;
   display: block;
   padding-top: 10px;
+  padding-right: 5px;
   float: left;
   text-align: center;
 }
@@ -1426,4 +1436,113 @@ html.w-mod-js *[data-ix="modal-interaction"] {
     margin-top: -62px;
     margin-right: -632px;
   }
+}
+
+/* social elements at the top */
+
+/*@media (min-width: 768px)
+.nav-menu2.w-nav-menu2 {
+    float: left !important;
+    margin-right: -15px;
+}
+
+@media (min-width: 768px)
+.nav-menu2.w-nav-menu2 {
+    float: left;
+    margin: 0;
+}*/
+/*
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}*/
+
+/*@media (min-width: 768px)
+.nav-menu2.w-nav-menu2>a {
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+}*/
+
+.nav-menu2.w-nav-menu2>a {
+    position: relative;
+    text-decoration: none;
+    /*display: block;*/
+}
+
+@media (min-width: 768px)
+.nav-menu2.w-nav-menu2>a {
+    float: left;
+}
+.nav-menu2.w-nav-menu2>a {
+    color: #4F4F4F;
+    font-size: 14px;
+}
+.nav-menu2.w-nav-menu2>a:hover, .nav-menu2.w-nav-menu2>a:focus {
+    background: #384053;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.nav-menu2.w-nav-menu2 .fa.fa-medium.fa-lg {
+    display: inline-block;
+    margin-left: 0;
+}
+
+.nav-menu2.w-nav-menu2 .fa.fa-medium.fa-lg {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+    background-image: url(images/medium.svg);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: center center;
+    vertical-align: bottom;
+}
+
+.nav-menu2.w-nav-menu2 .fa.fa-github.fa-lg {
+    display: inline-block;
+    margin-left: 0;
+}
+
+.nav-menu2.w-nav-menu2 .fa.fa-github.fa-lg {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+    background-image: url(images/gitHubLogo.svg);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: center center;
+    vertical-align: bottom;
+}
+
+.nav-menu2.w-nav-menu2 .fa.fa-twitter.fa-lg {
+    display: inline-block;
+    margin-left: 0;
+}
+
+.nav-menu2.w-nav-menu2 .fa.fa-twitter.fa-lg {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+    background-image: url(images/twitter.svg);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: center center;
+    vertical-align: bottom;
+}
+
+.nav-menu2.w-nav-menu2>a {
+    position: relative;
+    padding: 10px 15px;
+}
+
+@media (min-width: 768px)
+.nav-menu2.w-nav-menu2>a {
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
 }
