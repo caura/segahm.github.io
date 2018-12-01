@@ -70,7 +70,7 @@ nav.nav-menu2.w-nav-menu2 {
   float: none;
   clear: none;
   font-family: Lato, sans-serif;
-  color: #506b8f;
+  color: #424141;
   font-size: 16px;
   font-weight: 400;
   text-align: left;
@@ -164,7 +164,7 @@ nav.nav-menu2.w-nav-menu2 {
   margin-bottom: 40px;
   padding-top: 0px;
   font-family: Lato, sans-serif;
-  color: #506b8f;
+  color: #424141;
   font-size: 42px;
   line-height: 60px;
   font-weight: 900;
@@ -360,13 +360,13 @@ nav.nav-menu2.w-nav-menu2 {
 .section_quotes {
   position: relative;
   z-index: 2;
-  background-color: #506b8f;
+  background-color: #424141;
 }
 
 .quote {
   padding-right: 0px;
   padding-left: 0px;
-  background-color: #506b8f;
+  background-color: #424141;
   font-family: Lato, sans-serif;
   color: #fff;
   font-size: 20px;
@@ -489,7 +489,7 @@ nav.nav-menu2.w-nav-menu2 {
   -ms-flex-align: stretch;
   align-items: stretch;
   font-family: Lato, sans-serif;
-  color: #506b8f;
+  color: #424141;
   font-size: 48px;
   font-weight: 900;
   text-align: left;
@@ -511,7 +511,7 @@ nav.nav-menu2.w-nav-menu2 {
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
-  color: #506b8f;
+  color: #424141;
   font-size: 42px;
   font-weight: 900;
 }
@@ -664,7 +664,7 @@ nav.nav-menu2.w-nav-menu2 {
   margin-bottom: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #506b8f;
+  color: #424141;
   font-weight: 300;
 }
 
@@ -675,7 +675,7 @@ nav.nav-menu2.w-nav-menu2 {
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  color: #506b8f;
+  color: #424141;
   font-size: 48px;
   font-weight: 300;
 }
@@ -710,7 +710,7 @@ nav.nav-menu2.w-nav-menu2 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  background-color: #506b8f;
+  background-color: #424141;
 }
 
 .section-content {
@@ -955,7 +955,7 @@ nav.nav-menu2.w-nav-menu2 {
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-radius: 8px 8px 0px 0px;
-  background-color: #506b8f;
+  background-color: #424141;
 }
 
 .header {
