@@ -1,0 +1,101 @@
+.keyvisual-cta-layer-content {
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    left: 0;
+    transition: bottom .2s linear;
+    padding-right: 1.375rem;
+    padding-left: 1.375rem;
+    text-align: center;
+    color: #77919f;
+}
+.keyvisual-cta-layer-content-alternative {
+    text-align: center;
+    color: #77919f;
+    margin: 0 auto;
+    position: relative;
+}
+.button {
+    text-transform: uppercase;
+    min-width: 100px;
+    text-align: center;
+    font-weight: 700;
+    padding: 15px 35px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 200ms,color 200ms;
+}
+.keyvisual-cta {
+    transition: width .2s linear,height .2s linear;
+    display: inline-block;
+}
+.button:hover {
+    background-color: #fff;
+    color: #000000;
+}
+.keyvisual-cta-layer-content .custom-file-label{
+    color:#000;
+}
+
+.navbar-scrolled [data-navbar="fixed"] {
+    background-color: hsla(0, 0%, 100%, .8);
+}
+nav.navbar.navbar-expand-lg.navbar-dark {
+    background-color: hsla(0, 0%, 37%,0.8)
+}
+
+.btn-primary {
+    background-color: #323435;
+    border-color: #323435;
+}
+.btn-primary:hover {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.navbar-light .navbar-brand, .navbar-dark .nav-navbar>.nav-item>.nav-link, .navbar-dark .nav-navbar>.nav-link, .navbar-stick-light.stick .nav-navbar>.nav-item>.nav-link, .navbar-stick-light.stick .nav-navbar>.nav-link {
+    color: #fff;
+}
+.navbar-light .nav-navbar>.nav-item.show>.nav-link, .navbar-light .nav-navbar>.nav-item:hover>.nav-link, .navbar-light .nav-navbar>.nav-link.show, .navbar-light .nav-navbar>.nav-link:hover, .navbar-stick-dark.stick .nav-navbar>.nav-item.show>.nav-link, .navbar-stick-light.stick .nav-navbar>.nav-item:hover>.nav-link, .navbar-stick-light.stick .nav-navbar>.nav-link.show, .navbar-stick-light.stick .nav-navbar>.nav-link:hover {
+    color: #ffe200;
+}
+
+.header-scrolled > .navbar-light .nav-navbar, .header-scrolled > .navbar-light .nav-navbar>.nav-item>.nav-link, .header-scrolled > .navbar-light .nav-navbar>.nav-link, .header-scrolled > .navbar-stick-dark.stick .nav-navbar>.nav-item>.nav-link, .header-scrolled > .navbar-stick-light.stick .nav-navbar>.nav-link, .header-scrolled >  .navbar-brand {
+    color:#757575;
+}
+.lead_2 {
+    color:#000
+}
+
+.btn-success {
+    color: #000;
+    background-color: #ffe200;
+    border-color: #ffe200;
+}
+.btn-success:hover {
+    color: #000;
+    background-color: #ffba00;
+    border-color: #ffba00;
+}
+
+.navbar {
+    top: 0px;
+}
+#distribution-header{
+        background-image: url(../img/two-sided-2.png)
+    }
+@media screen and (max-width:720px){
+    #distribution-header{
+        background-image: url(../img/two-sided-narrow-2.png)
+    }
+}
+
+#distribution-header .lead-2{
+    color:#000;
+}
+#distribution-header a.text-muted{
+    color: #000;
+    text-decoration:underline;
+}
